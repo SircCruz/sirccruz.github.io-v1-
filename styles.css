@@ -1,0 +1,296 @@
+
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+hr{
+    border: 3px solid rgb(0, 255, 0, 0);
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 0%;
+
+    animation-name: hrAnim;
+    animation-delay: 11.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hrAnim {
+    from{
+        width: 0%;
+        border: 3px solid rgb(0, 255, 0, 0);
+    }
+    to{
+        width: 100%;
+        border: 3px solid rgb(0, 100, 0);
+    }
+}
+.navigation{
+    display: none;
+    position: fixed;
+    z-index: 2;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+
+    animation-name: backgroundAnim;
+    animation-delay: 13s;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes backgroundAnim {
+    from{
+        background-color: #121212;
+    }
+    to{
+        background-color: #ccc;
+    }
+}
+.preintro{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.preintro p{
+    font-weight: lighter;
+    color: #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation-name: messageAnim, messageAnim2;
+    animation-delay: 0s, 5s;
+    animation-duration: 4s, 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes messageAnim{
+    from{
+        width: 1%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes messageAnim2 {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.introduction{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+}
+
+.introduction .greeting{
+    color: #ccc;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+
+    animation-name: greetingAnim, greetingAnim2;
+    animation-delay: 5.5s, 13s;
+    animation-duration: 1.5s, 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes greetingAnim {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes greetingAnim2 {
+    from{
+        color: #ccc;
+    }
+    to{
+        color: #121212;
+    }
+}
+.introduction .title, .introduction .description{
+    color: #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+}
+.introduction .title{
+    animation-name: titleAnim, titleAnim2;
+    animation-delay: 7.5s, 13s;
+    animation-duration: 1.75s, 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes titleAnim{
+    from{
+        width: 0%;
+    }  
+    to{
+        width: 100%;
+    }
+}
+@keyframes titleAnim2{
+    from{
+        color: #ccc;
+    }
+    to{
+        color: #121212;
+    }
+}
+.introduction .description{
+    animation-name: descriptionAnim, descriptionAnim2;
+    animation-delay: 9.5s, 13s;
+    animation-duration: 2s, 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes descriptionAnim {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes descriptionAnim2{
+    from{
+        color: #ccc;
+    }
+    to{
+        color: #121212;
+    }
+}
+.introduction .name{
+    font-size: 40px;
+    color: rgb(0, 100, 0);
+}
+.introduction svg{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+
+    position: relative;
+    margin-right: 7px;
+    fill:#ccc;
+}
+.svg1{
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation-name: svg1Anim;
+    animation-delay: 12s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes svg1Anim{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.svg2{
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation-name: svg2Anim;
+    animation-delay: 12.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes svg2Anim{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.svg3{
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation-name: svg3Anim;
+    animation-delay: 12.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes svg3Anim{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+        fill:#ccc;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+        fill:#121212;
+    }
+}
+.introduction image{
+    height: 640px;
+    width: 640px;
+    position: relative;
+}
+.about{
+    position: absolute;
+    top:100%;
+}
+.projects{
+    position: absolute;
+    top:200%;
+}
+.samples{
+    position: absolute;
+    top:300%;
+}
+.contact{
+    position: absolute;
+    top:400%;
+}
+footer{
+    position: absolute;
+    top:500%;
+}
+.about, .projects, .samples, .contact, footer{
+    left: 75%;
+    transform: translate(-75%);
+}
+@media (max-width: 720px){
+    .preintro p {
+        font-size: 3vw;
+    }
+    .introduction svg{
+        margin-top: 4px;
+    }
+    .introduction .name{
+        font-size: 7vw;
+    }
+    .introduction .greeting{
+        font-size: 5.5vw;
+    }
+    .introduction .title, .introduction .description{
+        font-size: 7vw;
+    }
+    .introduction svg{
+        height: 9vw;
+        width: 9vw;
+
+        margin-right: 0.75vw;
+    }
+}
