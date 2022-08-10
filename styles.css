@@ -536,9 +536,6 @@
     border: solid 3px rgb(0, 100, 0);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-} 
-.projects .subcard .img-slideshow .image-container{
-    transform: translateY(50%);
 }
 .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
     position: absolute;
