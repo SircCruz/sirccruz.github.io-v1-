@@ -551,8 +551,8 @@
 }
 .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
     position: absolute;
-    width: 99.5%;
-    height: 240px;
+    max-width: 99.5%;
+    height: auto;
     transform: translateX(9px);
     z-index: -1;
 
