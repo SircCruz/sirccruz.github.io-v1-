@@ -29,7 +29,7 @@ function imageSet1(){
         document.getElementById("set1btn" + image1).className = "active";
         temp1 = image1;
         image1++;
-        setTimeout(imageSet1, 5000);
+        timeout1 = setTimeout(imageSet1, 5000);
     }
     catch{
         image1 = 0;
