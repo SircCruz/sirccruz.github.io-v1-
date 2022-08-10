@@ -59,6 +59,7 @@ imageSet2()
 
 var image3 = 0;
 var temp3 = 0;
+var timeout;
 function imageSet3(){
     try{
         document.getElementById("set3img" + temp3).className = "inactive";
@@ -67,11 +68,11 @@ function imageSet3(){
         document.getElementById("set3btn" + image3).className = "active";
         temp3 = image3;
         image3++;
-        setTimeout(imageSet3, 5000);
+        timeout = setTimeout(imageSet3, 5000);
     }
     catch{
         image3 = 0;
         setTimeout(imageSet3, 0);
     }
 }
-imageSet3()
+imageSet3();
