@@ -37,6 +37,12 @@ function imageSet1(){
     }
 }
 
+function setImg1(img){
+    clearTimeout(timeout1);
+    image1 = img;
+    imageSet1();
+}
+
 imageSet1();
 
 var image2 = 0;
