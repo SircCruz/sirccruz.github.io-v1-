@@ -64,6 +64,13 @@ function imageSet2(){
         setTimeout(imageSet2, 0);
     }
 }
+
+function setImg2(img){
+    clearTimeout(timeout2);
+    image2 = img;
+    imageSet2();
+}
+
 imageSet2()
 
 var image3 = 0;
