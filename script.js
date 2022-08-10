@@ -92,3 +92,9 @@ function imageSet3(){
     }
 }
 imageSet3();
+
+function setImg3(img){
+    clearTimeout(timeout3);
+    image3 = img;
+    imageSet3();
+}
