@@ -47,6 +47,7 @@ imageSet1();
 
 var image2 = 0;
 var temp2 = 0;
+var timeout2;
 
 function imageSet2(){
     try{
