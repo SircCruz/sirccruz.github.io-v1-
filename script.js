@@ -20,6 +20,7 @@ function scrollToDiv(name){
 
 var image1 = 0;
 var temp1 = 0;
+var timeout1;
 function imageSet1(){
     try{
         document.getElementById("set1img" + temp1).className = "inactive";
@@ -40,6 +41,7 @@ imageSet1();
 
 var image2 = 0;
 var temp2 = 0;
+
 function imageSet2(){
     try{
         document.getElementById("set2img" + temp2).className = "inactive";
@@ -59,7 +61,7 @@ imageSet2()
 
 var image3 = 0;
 var temp3 = 0;
-var timeout;
+var timeout3;
 function imageSet3(){
     try{
         document.getElementById("set3img" + temp3).className = "inactive";
@@ -68,7 +70,7 @@ function imageSet3(){
         document.getElementById("set3btn" + image3).className = "active";
         temp3 = image3;
         image3++;
-        timeout = setTimeout(imageSet3, 5000);
+        timeout3 = setTimeout(imageSet3, 5000);
     }
     catch{
         image3 = 0;
