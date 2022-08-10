@@ -57,7 +57,7 @@ function imageSet2(){
         document.getElementById("set2btn" + image2).className = "active";
         temp2 = image2;
         image2++;
-        setTimeout(imageSet2, 5000);
+        timeout2 = setTimeout(imageSet2, 5000);
     }
     catch{
         image2 = 0;
