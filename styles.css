@@ -603,6 +603,7 @@ body{
     margin-top: 4px;
 }
 .projects .subcard .img-slideshow .btn-group .top .btn-svg{
+    border: none;
     background-color: rgba(0, 0, 0, 0);
     display: inline-flex;
     float: right;
