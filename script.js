@@ -18,7 +18,7 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
-function exitFullscreen{
+function exitFullscreen(){
     document.getElementById("fullscreen").style.display = "none";
 }
 
