@@ -440,6 +440,7 @@ body{
     background-color: #555;
 }
 .fullscreen .options p{
+    align-self: center;
     color: white;
 }
 .about .card{
