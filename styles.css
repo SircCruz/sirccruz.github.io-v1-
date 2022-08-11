@@ -425,7 +425,9 @@ body{
 .fullscreen .options{
     background-color: #555;
     width: 100px;
-    z-index: 2;
+}
+.fullscreen .options p{
+    color: #eee;
 }
 .about .card{
     width: 70%;
