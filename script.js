@@ -21,6 +21,8 @@ function scrollToDiv(name){
 var image1 = 0;
 var temp1 = 0;
 var timeout1;
+var isImgMaximized = false;
+
 function imageSet1(){
     try{
         document.getElementById("set1img" + temp1).className = "inactive btn-page";
@@ -130,4 +132,8 @@ function prevImg3(){
     clearTimeout(timeout3);
     image3 -= 2;
     imageSet3();
+}
+
+function maximizeImage(){
+    isImgMaximized = true;
 }
