@@ -557,7 +557,7 @@ body{
     justify-content: center;
     background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0, 0.7));
 }
-.projects .subcard .img-slideshow .page .svg-button, .samples .subcard .img-slideshow .page .svg-button{
+.projects .subcard .img-slideshow .page .btn-svg, .samples .subcard .img-slideshow .page .btn-svg{
     border:none;
     cursor: pointer;
     background-color: #ffffff;
