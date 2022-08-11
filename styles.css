@@ -325,6 +325,14 @@ body{
         margin-right: 0.75vw;
     }
 }
+.btn-svg{
+    display: inline-flex;
+    float: right;
+
+    border:none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
 .navigation{
     top: 50%;
     transform: translateY(-50%);
@@ -595,14 +603,6 @@ body{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     margin-top: 4px;
-}
-.projects .subcard .img-slideshow .btn-group .top .btn-svg{
-    display: inline-flex;
-    float: right;
-
-    border:none;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
 }
 .projects .subcard .img-slideshow .page .btn-page, .samples .subcard .img-slideshow .page .btn-page{
     border: none;
