@@ -48,6 +48,11 @@ function nextImg1(){
     image1++;
     imageSet1();
 }
+function prevImg1(){
+    clearTimeout(timeout1);
+    image1--;
+    imageSet1();
+}
 
 imageSet1();
 
