@@ -560,7 +560,7 @@ body{
 .projects .subcard .img-slideshow .page .btn-svg, .samples .subcard .img-slideshow .page .btn-svg{
     border:none;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
 }
 .projects .subcard .img-slideshow .page .btn-page, .samples .subcard .img-slideshow .page .btn-page{
     border: none;
