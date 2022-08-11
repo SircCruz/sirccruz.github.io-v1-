@@ -405,7 +405,7 @@ body{
         opacity: 0;
     }
 }
-.portfolio>.fullscreen{
+body>.fullscreen{
     position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
@@ -604,6 +604,7 @@ body{
 }
 .projects .subcard .img-slideshow .btn-group .top .btn-svg{
     border: none;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     display: inline-flex;
     float: right;
