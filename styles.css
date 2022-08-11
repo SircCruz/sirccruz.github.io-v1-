@@ -439,8 +439,7 @@ body{
     background-color: #555;
 }
 .fullscreen .options p{
-    padding: 3px;
-    background-color: #eee;
+    color: white;
 }
 .about .card{
     width: 70%;
