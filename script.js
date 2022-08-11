@@ -21,8 +21,15 @@ function scrollToDiv(name){
 function exit_Fullscreen(){
     document.getElementById("fullscreen").style.display = "none";
 }
-function enter_Fullscreen(){
+function enter_Fullscreen(title, imgCount){
     document.getElementById("fullscreen").style.display = "block";
+    getImages(title, imgCount);
+}
+function getImages(title, imgCount){
+    for(let i = 1; i <= imgCount; i++){
+        document.getElementById("img-container").innerHTML += 
+        "<img src='images/" + title + "/"+ imgCount + ".JPG'>";
+    }
 }
 
 var image1 = 0;
