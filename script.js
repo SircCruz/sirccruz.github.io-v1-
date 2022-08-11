@@ -118,3 +118,8 @@ function setImg3(img){
     image3 = img;
     imageSet3();
 }
+
+function nextImg3(){
+    clearTimeout(timeout3);
+    imageSet3();
+}
