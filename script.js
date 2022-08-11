@@ -123,3 +123,8 @@ function nextImg3(){
     clearTimeout(timeout3);
     imageSet3();
 }
+function prevImg2(){
+    clearTimeout(timeout2);
+    image1 -= 2;
+    imageSet2();
+}
