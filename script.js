@@ -81,6 +81,11 @@ function setImg2(img){
     imageSet2();
 }
 
+function nextImg2(){
+    clearTimeout(timeout2);
+    imageSet2();
+}
+
 imageSet2()
 
 var image3 = 0;
