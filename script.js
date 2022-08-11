@@ -145,5 +145,5 @@ function prevImg3(){
 }
 
 function enlargeImage(){
-    isImgMaximized = true;
+    isImgEnlarged = true;
 }
