@@ -21,15 +21,25 @@ function scrollToDiv(name){
 var image1 = 0;
 var temp1 = 0;
 var timeout1;
-var isImgMaximized = false;
+var isImgEnlarged = false;
 
 function imageSet1(){
     try{
-        document.getElementById("set1img" + temp1).className = "inactive btn-page";
-        document.getElementById("set1img" + image1).className = "active btn-page";
-        document.getElementById("set1btn" + temp1).className = "inactive btn-page";
-        document.getElementById("set1btn" + image1).className = "active btn-page";
-        document.getElementById("set1pagenumber").innerText = image1 + 1 + "/7";
+        if(isImgEnlarged){
+            document.getElementById("set1img" + temp1).className = "inactive btn-page enlarge";
+            document.getElementById("set1img" + image1).className = "active btn-page enlarge";
+            document.getElementById("set1btn" + temp1).className = "inactive btn-page enlarge";
+            document.getElementById("set1btn" + image1).className = "active btn-page enlarge";
+            document.getElementById("set1pagenumber").innerText = image1 + 1 + "/7";
+        }
+        else{
+            document.getElementById("set1img" + temp1).className = "inactive btn-page shrink";
+            document.getElementById("set1img" + image1).className = "active btn-page shrink";
+            document.getElementById("set1btn" + temp1).className = "inactive btn-page shrink";
+            document.getElementById("set1btn" + image1).className = "active btn-page shrink";
+            document.getElementById("set1pagenumber").innerText = image1 + 1 + "/7";
+        }
+
         temp1 = image1;
         image1++;
         timeout1 = setTimeout(imageSet1, 5000);
@@ -134,6 +144,6 @@ function prevImg3(){
     imageSet3();
 }
 
-function maximizeImage(){
+function enlargeImage(){
     isImgMaximized = true;
 }
