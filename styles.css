@@ -530,10 +530,10 @@ body{
 
     border: solid 1px rgb(0,0,0);
 }
-.projects .subcard .img-slideshow .maximize, .samples .subcard .img-slideshow .maximize{
-    animation: maximizeImg 0.3s forwards;
+.projects .subcard .img-slideshow .enlarge, .samples .subcard .img-slideshow .enlarge{
+    animation: enlargeImg 0.3s forwards;
 }
-@keyframes maximizeImg {
+@keyframes enlargeImg {
     from{
         max-width: 34%;
         height: 240px; /*auto*/
