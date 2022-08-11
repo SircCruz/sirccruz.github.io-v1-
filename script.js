@@ -19,7 +19,7 @@ function scrollToDiv(name){
 }
 
 function exitFullscreen(){
-    document.getElementById("fullscreen").style.display = "none";
+    console.log("ohh yeah");
 }
 
 var image1 = 0;
