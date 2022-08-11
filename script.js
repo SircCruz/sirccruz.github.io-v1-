@@ -45,7 +45,6 @@ function setImg1(img){
 
 function nextImg1(){
     clearTimeout(timeout1);
-    image1++;
     imageSet1();
 }
 function prevImg1(){
