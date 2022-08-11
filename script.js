@@ -18,10 +18,10 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
-function exitFullscreen(){
-    console.log("ohh yeah");
+function exit_Fullscreen(){
+    document.getElementById("fullscreen").style.display = "none";
 }
-function enterFullscreen(){
+function enter_Fullscreen(){
     document.getElementById("fullscreen").style.display = "block";
 }
 
