@@ -409,7 +409,8 @@ body{
     position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    
+    width: 100%;
+    height: 100%;
 }
 .about .card{
     width: 70%;
