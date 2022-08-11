@@ -21,6 +21,9 @@ function scrollToDiv(name){
 function exitFullscreen(){
     console.log("ohh yeah");
 }
+function enterFullscreen(){
+    document.getElementById("fullscreen").style.display = "block";
+}
 
 var image1 = 0;
 var temp1 = 0;
