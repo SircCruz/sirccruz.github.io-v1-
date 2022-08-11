@@ -530,6 +530,23 @@ body{
 
     border: solid 1px rgb(0,0,0);
 }
+.projects .subcard .img-slideshow .maximize, .samples .subcard .img-slideshow .maximize{
+    animation: maximizeImg 0.3s forwards;
+}
+@keyframes maximizeImg {
+    from{
+        max-width: 34%;
+        height: 240px; /*auto*/
+        left: auto;
+        transform: translateX(9px);
+    }
+    to{
+        max-width: 100%;
+        height: auto;
+        left: 25%;
+        transform: translateX(12.5%);
+    }
+}
 .projects .subcard .img-slideshow .top, .samples .subcard .img-slideshow .top{
     transform: translateX(9px);
     height: 80px;
