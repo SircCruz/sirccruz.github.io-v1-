@@ -557,6 +557,11 @@ body{
     justify-content: center;
     background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0, 0.7));
 }
+.projects .subcard .img-slideshow .page .svg-button, .samples .subcard .img-slideshow .page .svg-button{
+    border:none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
 .projects .subcard .img-slideshow .page .btn-page, .samples .subcard .img-slideshow .page .btn-page{
     border: none;
     border-radius: 50%;
