@@ -18,6 +18,10 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
+function exitFullscreen{
+    document.getElementById("fullscreen").style.display = "none";
+}
+
 var image1 = 0;
 var temp1 = 0;
 var timeout1;
