@@ -50,7 +50,7 @@ function nextImg1(){
 }
 function prevImg1(){
     clearTimeout(timeout1);
-    image1--;
+    image1 -= 2;
     imageSet1();
 }
 
