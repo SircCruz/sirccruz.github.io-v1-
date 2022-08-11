@@ -562,10 +562,6 @@ body{
 
     color: white;
 }
-.projects .subcard .img-slideshow .fullscreen, .samples .subcard .img-slideshow .fullscreen{
-    display: inline-flex;
-    float: right;
-}
 .projects .subcard .img-slideshow .page, .samples .subcard .img-slideshow .page{
     margin-top: 90px;
     transform: translateX(9px);
