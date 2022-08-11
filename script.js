@@ -66,7 +66,7 @@ function imageSet2(){
         document.getElementById("set2img" + image2).className = "active btn-page";
         document.getElementById("set2btn" + temp2).className = "inactive btn-page";
         document.getElementById("set2btn" + image2).className = "active btn-page";
-        document.getElementById("set2pagenumber").innerText = image1 + 1 + "/5";
+        document.getElementById("set2pagenumber").innerText = image3 + 1 + "/5";
         temp2 = image2;
         image2++;
         timeout2 = setTimeout(imageSet2, 5000);
@@ -104,6 +104,7 @@ function imageSet3(){
         document.getElementById("set3img" + image3).className = "active btn-page";
         document.getElementById("set3btn" + temp3).className = "inactive btn-page";
         document.getElementById("set3btn" + image3).className = "active btn-page";
+        document.getElementById("set3pagenumber").innerText = image3 + 1 + "/5";
         temp3 = image3;
         image3++;
         timeout3 = setTimeout(imageSet3, 5000);
