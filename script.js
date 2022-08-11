@@ -27,6 +27,7 @@ function imageSet1(){
         document.getElementById("set1img" + image1).className = "active btn-page";
         document.getElementById("set1btn" + temp1).className = "inactive btn-page";
         document.getElementById("set1btn" + image1).className = "active btn-page";
+        document.getElementById("set1pagenumber").innerText = image1 + 1 + "/7";
         temp1 = image1;
         image1++;
         timeout1 = setTimeout(imageSet1, 5000);
