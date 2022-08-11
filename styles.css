@@ -561,6 +561,7 @@ body{
     border:none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+    margin-top: 4px;
 }
 .projects .subcard .img-slideshow .page .btn-page, .samples .subcard .img-slideshow .page .btn-page{
     border: none;
