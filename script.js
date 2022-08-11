@@ -85,6 +85,11 @@ function nextImg2(){
     clearTimeout(timeout2);
     imageSet2();
 }
+function prevImg2(){
+    clearTimeout(timeout2);
+    image1 -= 2;
+    imageSet2();
+}
 
 imageSet2()
 
