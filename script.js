@@ -78,10 +78,10 @@ var temp3 = 0;
 var timeout3;
 function imageSet3(){
     try{
-        document.getElementById("set3img" + temp3).className = "inactive";
-        document.getElementById("set3img" + image3).className = "active";
-        document.getElementById("set3btn" + temp3).className = "inactive";
-        document.getElementById("set3btn" + image3).className = "active";
+        document.getElementById("set3img" + temp3).className = "inactive btn-page";
+        document.getElementById("set3img" + image3).className = "active btn-page";
+        document.getElementById("set3btn" + temp3).className = "inactive btn-page";
+        document.getElementById("set3btn" + image3).className = "active btn-page";
         temp3 = image3;
         image3++;
         timeout3 = setTimeout(imageSet3, 5000);
