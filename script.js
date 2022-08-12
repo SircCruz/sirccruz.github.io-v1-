@@ -21,6 +21,7 @@ function scrollToDiv(name){
 var image = 1;
 var temp = 1;
 var _imgCount = 0;
+var _title = "";
 function nextPage(){
     try{
         document.getElementById("imgNum" + temp).className = "inactive";
@@ -41,11 +42,13 @@ function prevPage(){
 
 function exit_Fullscreen(){
     document.getElementById("fullscreen").style.display = "none";
+    removeImages(_title, _imgCount)
 }
 function enter_Fullscreen(title, imgCount){
     _imgCount = imgCount;
+    _title = title;
     document.getElementById("fullscreen").style.display = "block";
-    getImages(title, imgCount);
+    getImages(_title, _imgCount);
 }
 function getImages(title, imgCount){
     for(let i = 1; i <= imgCount; i++){
@@ -53,6 +56,12 @@ function getImages(title, imgCount){
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum" + i + "'>";
         image = 1;
         nextPage(4);
+    }
+}
+function removeImages(title, imgCount){
+    for(let i = 1; i <= imgCount; i++){
+        var element = document.getElementById("img-container");
+        element.remove();
     }
 }
 
