@@ -32,6 +32,12 @@ function nextPage(){
         nextPage();
     }
 }
+function prevPage(){
+    document.getElementById("imgNum" + temp).className = "inactive";
+    document.getElementById("imgNum" + image).className = "active";
+    temp = image;
+    image -= 2;
+}
 
 function exit_Fullscreen(){
     document.getElementById("fullscreen").style.display = "none";
