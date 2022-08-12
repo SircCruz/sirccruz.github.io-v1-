@@ -20,12 +20,12 @@ function scrollToDiv(name){
 
 var image = 1;
 var temp = 1;
-var imgCount = 0;
+var _imgCount = 0;
 function nextPage(){
     try{
         document.getElementById("imgNum" + temp).className = "inactive";
         document.getElementById("imgNum" + image).className = "active";
-        document.getElementById("pagenum").innerText = image + "/" + imgCount;
+        document.getElementById("pagenum").innerText = image + "/" + _imgCount;
         temp = image;
         image++;
     }
@@ -38,7 +38,7 @@ function prevPage(){
     try{
         document.getElementById("imgNum" + temp).className = "inactive";
         document.getElementById("imgNum" + image).className = "active";
-        document.getElementById("pagenum").innerText = image + "/" + imgCount;
+        document.getElementById("pagenum").innerText = image + "/" + _imgCount;
         temp = image;
         image--;
     }
@@ -52,7 +52,7 @@ function exit_Fullscreen(){
     document.getElementById("fullscreen").style.display = "none";
 }
 function enter_Fullscreen(title, imgCount){
-    imgCount = imgCount;
+    _imgCount = imgCount;
     document.getElementById("fullscreen").style.display = "block";
     getImages(title, imgCount);
 }
