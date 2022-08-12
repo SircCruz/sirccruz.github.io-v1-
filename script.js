@@ -43,7 +43,7 @@ function prevPage(){
         image--;
     }
     catch{
-        image = imgCount;
+        image = _imgCount;
         prevPage();
     }
 }
