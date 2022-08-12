@@ -646,7 +646,7 @@ body>.fullscreen{
         border-radius: 50%;
     }
 }
-.projects .subcard .img-slideshow .active, .samples .subcard .img-slideshow .active{
+.projects .subcard .img-slideshow .active, .samples .subcard .img-slideshow .active, .fullscreen .active{
     animation: imgFadeInAnim 0.5s forwards;
 }
 @keyframes imgFadeInAnim{
