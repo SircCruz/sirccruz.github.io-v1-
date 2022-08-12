@@ -35,17 +35,8 @@ function nextPage(){
     }
 }
 function prevPage(){
-    try{
-        document.getElementById("imgNum" + temp).className = "inactive";
-        document.getElementById("imgNum" + image).className = "active";
-        document.getElementById("pagenum").innerText = image + "/" + _imgCount;
-        temp = image;
-        image--;
-    }
-    catch{
-        image = _imgCount;
-        prevPage();
-    }
+    image -= 2;
+    nextPage();
 }
 
 function exit_Fullscreen(){
