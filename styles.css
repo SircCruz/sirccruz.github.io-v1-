@@ -657,7 +657,7 @@ body>.fullscreen{
         opacity: 1;
     }
 }
-.projects .subcard .img-slideshow .inactive, .samples .subcard .img-slideshow .inactive{
+.projects .subcard .img-slideshow .inactive, .samples .subcard .img-slideshow .inactive, .fullscreen .inactive{
     animation: imgFadeOutAnim 0.5s 0.25s forwards;
 }
 @keyframes imgFadeOutAnim{
