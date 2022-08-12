@@ -31,7 +31,6 @@ function nextPage(){
     }
     catch{
         image = 1;
-        nextPage();
     }
 }
 function prevPage(){
