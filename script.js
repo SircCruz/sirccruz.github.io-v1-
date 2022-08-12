@@ -22,20 +22,22 @@ var image = 1;
 var temp = 1;
 var _imgCount = 0;
 function nextPage(){
-    try{
+    if(image <= _imgCount){
         document.getElementById("imgNum" + temp).className = "inactive";
         document.getElementById("imgNum" + image).className = "active";
         document.getElementById("pagenum").innerText = image + "/" + _imgCount;
         temp = image;
         image++;
     }
-    catch{
-        image = 1;
-    }
 }
 function prevPage(){
     image -= 2;
-    nextPage();
+    if(image >= 1){
+        nextPage();
+    }
+    else{
+        image = 2;
+    }
 }
 
 function exit_Fullscreen(){
@@ -52,8 +54,8 @@ function getImages(title, imgCount){
         document.getElementById("img-container").innerHTML += 
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum" + i + "'>";
         image = 1;
-        nextPage();
     }
+    nextPage();
 }
 function removeImages(){
     for(let i = 1; i <= _imgCount; i++){
