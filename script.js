@@ -31,6 +31,14 @@ function getImages(title, imgCount){
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum'" + i + ">";
     }
 }
+var image = 1;
+var temp = 1;
+function nextPage(){
+    document.getElementById("imgNum" + temo).className = "inactive";
+    document.getElementById("imgNum" + image).className = "active";
+    temp = image;
+    image++;
+}
 
 var image1 = 0;
 var temp1 = 0;
