@@ -37,8 +37,9 @@ function prevPage(){
     try{
         document.getElementById("imgNum" + temp).className = "inactive";
         document.getElementById("imgNum" + image).className = "active";
+        document.getElementById("pagenum").innerText = image + "/" + imgCount;
         temp = image;
-        image -= 2;
+        image--;
     }
     catch{
         image = imgCount;
