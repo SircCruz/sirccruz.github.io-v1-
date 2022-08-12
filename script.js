@@ -18,6 +18,15 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
+var image = 1;
+var temp = 1;
+function nextPage(){
+    document.getElementById("imgNum" + temp).className = "inactive";
+    document.getElementById("imgNum" + image).className = "active";
+    temp = image;
+    image++;
+}
+
 function exit_Fullscreen(){
     document.getElementById("fullscreen").style.display = "none";
 }
@@ -31,14 +40,6 @@ function getImages(title, imgCount){
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum'" + i + ">";
         nextPage();
     }
-}
-var image = 1;
-var temp = 1;
-function nextPage(){
-    document.getElementById("imgNum" + temp).className = "inactive";
-    document.getElementById("imgNum" + image).className = "active";
-    temp = image;
-    image++;
 }
 
 var image1 = 0;
