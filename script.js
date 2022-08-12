@@ -21,10 +21,16 @@ function scrollToDiv(name){
 var image = 1;
 var temp = 1;
 function nextPage(){
-    document.getElementById("imgNum" + temp).className = "inactive";
-    document.getElementById("imgNum" + image).className = "active";
-    temp = image;
-    image++;
+    try{
+        document.getElementById("imgNum" + temp).className = "inactive";
+        document.getElementById("imgNum" + image).className = "active";
+        temp = image;
+        image++;
+    }
+    catch{
+        image = 1;
+        nextPage();
+    }
 }
 
 function exit_Fullscreen(){
