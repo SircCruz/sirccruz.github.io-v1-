@@ -58,7 +58,7 @@ function getImages(title, imgCount){
 }
 function removeImages(){
     for(let i = 1; i <= _imgCount; i++){
-        var element = document.getElementById("img-container");
+        var element = document.getElementById("imgNum" + i);
         element.remove();
     }
 }
