@@ -53,7 +53,7 @@ function getImages(title, imgCount){
         document.getElementById("img-container").innerHTML += 
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum" + i + "'>";
         image = 1;
-        nextPage(4);
+        nextPage();
     }
 }
 function removeImages(){
