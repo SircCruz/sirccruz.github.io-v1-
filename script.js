@@ -37,7 +37,7 @@ function enter_Fullscreen(title, imgCount){
 function getImages(title, imgCount){
     for(let i = 1; i <= imgCount; i++){
         document.getElementById("img-container").innerHTML += 
-        "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum'" + i + ">";
+        "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum" + i + "'>";
         nextPage();
     }
 }
