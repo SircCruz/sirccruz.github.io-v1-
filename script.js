@@ -29,12 +29,13 @@ function getImages(title, imgCount){
     for(let i = 1; i <= imgCount; i++){
         document.getElementById("img-container").innerHTML += 
         "<img src='images/" + title + "/"+ i + ".JPG' class='inactive' id='imgNum'" + i + ">";
+        nextPage();
     }
 }
 var image = 1;
 var temp = 1;
 function nextPage(){
-    document.getElementById("imgNum" + temo).className = "inactive";
+    document.getElementById("imgNum" + temp).className = "inactive";
     document.getElementById("imgNum" + image).className = "active";
     temp = image;
     image++;
