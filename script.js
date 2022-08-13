@@ -126,8 +126,10 @@ function setImg2(img){
     imageSet2();
 }
 function nextImg2(){
-    clearTimeout(timeout2);
-    imageSet2();
+    if (image2 < 5){
+        clearTimeout(timeout2);
+        imageSet2();
+    }
 }
 function prevImg2(){
     clearTimeout(timeout2);
