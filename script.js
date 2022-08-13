@@ -96,9 +96,11 @@ function nextImg1(){
     }
 }
 function prevImg1(){
-    clearTimeout(timeout1);
-    image1 -= 2;
-    imageSet1();
+    if(image1 > 1){
+        clearTimeout(timeout1);
+        image1 -= 2;
+        imageSet1();
+    }
 }
 imageSet1();
 var image2 = 0;
