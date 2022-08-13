@@ -90,8 +90,11 @@ function setImg1(img){
     imageSet1();
 }
 function nextImg1(){
-    clearTimeout(timeout1);
-    imageSet1();
+    console.log(image1);
+    if (image1 < 7){
+        clearTimeout(timeout1);
+        imageSet1();
+    }
 }
 function prevImg1(){
     clearTimeout(timeout1);
