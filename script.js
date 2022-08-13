@@ -173,7 +173,9 @@ function nextImg3(){
     }
 }
 function prevImg3(){
-    clearTimeout(timeout3);
-    image3 -= 2;
-    imageSet3();
+    if(image3 > 1){
+        clearTimeout(timeout3);
+        image3 -= 2;
+        imageSet3();
+    }
 }
