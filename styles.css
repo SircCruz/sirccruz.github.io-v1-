@@ -604,7 +604,7 @@ body>.fullscreen{
     background-color: rgba(0, 0, 0, 0);
     margin-top: 4px;
 }
-.projects .subcard .img-slideshow .btn-group .top .btn-svg{
+.projects .subcard .img-slideshow .btn-group .top .btn-svg, .samples .subcard .img-slideshow .btn-group .top .btn-svg{
     border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
