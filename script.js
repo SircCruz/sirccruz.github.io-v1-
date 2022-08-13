@@ -163,8 +163,10 @@ function setImg3(img){
     imageSet3();
 }
 function nextImg3(){
-    clearTimeout(timeout3);
-    imageSet3();
+    if (image3 < 5){
+        clearTimeout(timeout3);
+        imageSet3();
+    }
 }
 function prevImg3(){
     clearTimeout(timeout3);
