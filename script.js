@@ -81,7 +81,7 @@ function imageSet1(){
     }
     catch{
         image1 = 0;
-        imageSet1();
+        setTimeout(imageSet1, 0);
     }
 }
 function setImg1(img){
