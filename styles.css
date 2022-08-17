@@ -325,9 +325,13 @@ body{
 }
 .btn-navigation{
     position: fixed;
+    display: none;
     z-index: 0;
     left: 5px;
-    top: 5px;
+    transform: translateY(-10px);
+}
+.btn-navigation svg{
+    position: absolute;
 }
 .navigation{
     top: 50%;
@@ -381,10 +385,6 @@ body{
     font-size: large;
     font-weight: lighter;
 }
-.navigation .btn-close{
-    position: absolute;
-    left: 18vw;
-}
 .navigation .svg-close{
     width: 16px;
     height: 16px;
@@ -395,7 +395,7 @@ body{
 .navigation .num{
     margin-right: 2px;
 }
-.navigation.fadein{
+.navigation.fadein, .btn-navigation.fadein{
     animation: naviFadeinAnim 0.3s 0s forwards;
 }
 @keyframes naviFadeinAnim {
@@ -406,7 +406,7 @@ body{
         opacity: 1;
     }
 }
-.navigation.fadeout{
+.navigation.fadeout, .btn-navigation.fadeout{
     animation: naviFadeoutAnim 0.3s 0s forwards;
 }
 @keyframes naviFadeoutAnim {
@@ -425,7 +425,7 @@ body>.fullscreen{
     width: 100%;
     height: 100%;
 }
-.fullscreen .options .btn-svg,  .navigation .btn-close{
+.fullscreen .options .btn-svg,  .navigation .btn-close, .btn-naviopenclose{
     border:none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
@@ -609,7 +609,7 @@ body>.fullscreen{
     background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0, 0.7));
 }
 .projects .subcard .img-slideshow .page .btn-svg, .samples .subcard .img-slideshow .page .btn-svg{
-    border:none;
+    border: none;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     margin-top: 4px;

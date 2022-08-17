@@ -5,9 +5,12 @@ var scrollFunction = function(){
     if(currentScroll > scroll){
         document.getElementById("navigation").className = "navigation fadein";
         document.getElementById("navigation").style.display = "block";
+        document.getElementById("btn-navigation").className = "btn-navigation fadein";
+        document.getElementById("btn-navigation").style.display = "block";
     }
     else{
         document.getElementById("navigation").className = "navigation fadeout";
+        document.getElementById("btn-navigation").className = "btn-navigation fadeout";
     }
 }
 window.addEventListener("scroll", scrollFunction);
