@@ -41,6 +41,8 @@ function prevPage(){
 }
 
 function exit_Fullscreen(){
+    temp = 1;
+    image = 1;
     removeImages();
     document.getElementById("fullscreen").style.display = "none";
 }
