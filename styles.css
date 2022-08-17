@@ -275,18 +275,16 @@ body{
     top:100%;
     height: 700px;
     position: absolute;
-    left: 20%;
-    width: 80%;
+    left: 31.25%;
+    right: 11.25%;
 }
 .header_line{
-    margin: 0 11.25% 0 11.25%;
     border: none;
     border: solid 1px rgb(0, 100, 0);
     border-radius: 3px;
 }
 .header_title, .subheader{
     text-align: left;
-    margin-left: 11.25%;
 }
 .header_title{
     font-size: 30px;
@@ -451,16 +449,14 @@ body>.fullscreen{
     transform: translateY(50px);
 }
 .about .card._1{
-    width: 35%;
+    width: 46%;
     float: left;
-    padding-left: 11.25%;
     padding-right: 3.75%;
 }
 .about .card._2{
-    width: 35%;
+    width: 46%;
     float: left;
     padding-left: 3.75%;
-    padding-right: 11.15%;
 
     border-left: solid 1px rgba(0, 100, 0, 0.26);
 }
@@ -528,18 +524,18 @@ body>.fullscreen{
 }
 .projects .card .subcard, .samples .card .subcard{
     float: left;
-    width: 35%;
+    width: 46%;
     text-align: justify;
 }
 .projects .card .subcard._1, .samples .card .subcard._1{
-    padding: 0 3.75% 0 11.25%;
+    padding: 0 3.75% 0 0;
 }
 .projects .card .subcard._2, .samples .card .subcard._2{
-    padding: 0 11.25% 0 3.75%;
+    padding: 0 0 0 3.75%;
 } 
 .projects .subcard .img-border, .samples .subcard .img-border{
     position: absolute;
-    width: 34%;
+    width: 45%;
     height: 240px;
     transform: translateY(5px);
     z-index: -1;
@@ -549,7 +545,7 @@ body>.fullscreen{
     border-bottom-right-radius: 20px;
 }
 .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
-    width: 97.5%;
+    width: 98.5%;
     z-index: 1;
 }
 .projects .subcard .img-slideshow .btn-group, .samples .subcard .img-slideshow .btn-group{
@@ -561,7 +557,7 @@ body>.fullscreen{
 }
 .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
     position: absolute;
-    width: 34%; /*max-width: 100%;*/ 
+    width: 45%; /*max-width: 100%;*/ 
     height: 240px; /*auto*/
     left: auto;
     /*left:-25%;*/
@@ -709,9 +705,8 @@ body>.fullscreen{
     width: 100%;
 }
 .contact .details{
-    padding: 0 30% 0 30%;
     text-align: justify;
-
+    padding: 0 20% 0 20%;
     margin-top: 80px;
 }
 .contact .details .messageform{
@@ -748,9 +743,9 @@ body>.fullscreen{
     padding-right: 5px;
 }
 footer{
+    position: absolute;
     width: 100%;
     height: 70px;
-    margin-top: 80px;
 
     background-color: #ccc;
     border-top: solid 1px rgba(0, 0, 0, 0.5);
