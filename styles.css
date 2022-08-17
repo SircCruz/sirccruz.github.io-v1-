@@ -375,6 +375,10 @@ body{
     font-size: large;
     font-weight: lighter;
 }
+.navigation .svg-close{
+    width: 16px;
+    height: 16px;
+}
 .navigation button:hover{
     color: rgb(0, 100, 0);
 }
