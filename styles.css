@@ -808,7 +808,7 @@ footer p{
             filter: blur(0px);
         }
         to{
-            filter: blur(8px);
+            filter: blur(5px);
         }
     }
 }
