@@ -774,3 +774,13 @@ footer p{
     font-weight: lighter;
     color: #555;
 }
+@media (max-width: 1024px){
+    .portfolio{
+        transform: translateX(-29%);
+        width: 90%;
+    }
+    footer{
+        width: 111%;
+        transform: translateX(-5.1%);
+    }
+}
