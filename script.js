@@ -47,6 +47,9 @@ function hideNavi(){
     document.getElementById("portfolio").className = "portfolio unblur";
     document.getElementById("navigation").className = "navigation hide";
     document.body.style.overflowY = "scroll";
+
+    document.getElementById("svg-navi-open").className = "svg-navi-open enlarge";
+    document.getElementById("svg-navi-close").className = "svg-navi-close shrink";
 }
 
 var image = 1;
