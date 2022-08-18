@@ -337,7 +337,7 @@ body{
     transform: scale(1, 1);
 }
 .btn-navigation .svg-navi-open.shrink{
-    animation: shrinkopen 0.5s forwards;
+    animation: shrinkopen 0.25s forwards;
 }
 @keyframes shrinkopen {
     from{
@@ -349,6 +349,17 @@ body{
 }
 .btn-navigation .svg-navi-close{
     transform: scale(0, 0);
+}
+.btn-navigation .svg-navi-close.enlarge{
+    animation: enlargeclose 0.25s 0.25s forwards;
+}
+@keyframes enlargeclose{
+    from{
+        transform: scale(0, 0);
+    }
+    to{
+        transform: scale(1, 1);
+    }
 }
 .navigation{
     top: 50%;
