@@ -23,6 +23,7 @@ function scrollToDiv(name){
 
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
+    document.getElementById("portfolio").className = "portfolio blur";
 }
 
 var image = 1;
