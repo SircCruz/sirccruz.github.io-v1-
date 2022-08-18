@@ -822,4 +822,15 @@ footer p{
             filter: blur(5px);
         }
     }
+    .portfolio.unblur{
+        animation: unblurbg 0.5s forwards;
+    }
+    @keyframes unblurbg {
+        from{
+            filter: blur(5px);
+        }
+        to{
+            filter: blur(0px);
+        }
+    }
 }
