@@ -345,7 +345,7 @@ body{
 
     border-right: solid 1px rgba(0, 100, 0, 0.26);
     background-image: linear-gradient(rgba(0,0,0,0) 0%, #eee 5%, #eee 95%, rgba(0,0,0,0) 100%);
-    padding: 40px 0 40px 0;
+    padding: 50px 0 50px 0;
 }
 .navigation .me{
     text-align: center;
