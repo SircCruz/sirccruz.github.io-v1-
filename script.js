@@ -1,4 +1,4 @@
-
+var tablet = window.matchMedia("(max-width: 1024px)");
 var scrollFunction = function(){
     var currentScroll = window.scrollY;
     var scroll = document.getElementById("bg1").offsetHeight / 2;
