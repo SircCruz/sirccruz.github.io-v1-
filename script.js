@@ -26,6 +26,11 @@ function showNavi(){
     document.getElementById("portfolio").className = "portfolio blur";
     document.body.style.overflow = "hidden";
 }
+function hideNavi(){
+    document.getElementById("portfolio").className = "portfolio unblur";
+    document.getElementById("navigation").className = "navigation hide";
+    document.body.style.overflow = "scroll";
+}
 
 var image = 1;
 var temp = 1;
