@@ -35,12 +35,12 @@ function naviShowState(){
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
     document.getElementById("portfolio").className = "portfolio blur";
-    document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "hidden";
 }
 function hideNavi(){
     document.getElementById("portfolio").className = "portfolio unblur";
     document.getElementById("navigation").className = "navigation hide";
-    document.body.style.overflow = "scroll";
+    document.body.style.overflowY = "scroll";
 }
 
 var image = 1;
