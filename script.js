@@ -39,6 +39,9 @@ function showNavi(){
     document.getElementById("navigation").className = "navigation show";
     document.getElementById("portfolio").className = "portfolio blur";
     document.body.style.overflowY = "hidden";
+
+    document.getElementById("svg-navi-open").className = "svg-navi-open shrink";
+    document.getElementById("svg-navi-close").className = "svg-navi-close enlarge";
 }
 function hideNavi(){
     document.getElementById("portfolio").className = "portfolio unblur";
