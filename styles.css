@@ -340,7 +340,7 @@ body{
     opacity: 1;
 }
 .btn-navigation .svg-navi-close{
-    opacity: 0;
+    transform: scale(0, 0);
 }
 .navigation{
     top: 50%;
