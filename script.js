@@ -24,6 +24,7 @@ function scrollToDiv(name){
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
     document.getElementById("portfolio").className = "portfolio blur";
+    document.body.style.overflow = "hidden";
 }
 
 var image = 1;
