@@ -799,4 +799,15 @@ footer p{
             left: 0px;
         }
     }
+    .portfolio.blur{
+        animation: blurbg 0.5s forwards;
+    }
+    @keyframes bluebg {
+        from{
+            filter: blur(0px);
+        }
+        to{
+            filter: blur(8px);
+        }
+    }
 }
