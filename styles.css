@@ -802,7 +802,7 @@ footer p{
     .portfolio.blur{
         animation: blurbg 0.5s forwards;
     }
-    @keyframes bluebg {
+    @keyframes blurbg {
         from{
             filter: blur(0px);
         }
