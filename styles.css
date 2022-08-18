@@ -344,6 +344,7 @@ body{
     width: 20%;
 
     border-right: solid 1px rgba(0, 100, 0, 0.26);
+    background-color: #eee;
 }
 .navigation .me{
     text-align: center;
