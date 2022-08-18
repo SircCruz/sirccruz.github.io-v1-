@@ -19,6 +19,9 @@ function scrollToDiv(name){
     var yOffSet = 70;
     var y = document.getElementById(name).getBoundingClientRect().top + window.scrollY - yOffSet;
     window.scrollTo({top: y, behavior: 'smooth'});
+    if(tablet.matches){
+        naviShowState();
+    }
 }
 
 var isNaviShowing = false;
