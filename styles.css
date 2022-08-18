@@ -336,6 +336,10 @@ body{
 .btn-navigation .svg-navi-open{
     opacity: 1;
 }
+.btn-navigation .svg-navi-open.shrink{
+    opacity: 1;
+
+}
 .btn-navigation .svg-navi-close{
     opacity: 0;
 }
