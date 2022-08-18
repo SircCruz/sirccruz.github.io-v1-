@@ -337,7 +337,15 @@ body{
     transform: scale(1, 1);
 }
 .btn-navigation .svg-navi-open.shrink{
-    opacity: 1;
+    animation: shrinkopen 0.5s forwards;
+}
+@keyframes shrinkopen {
+    from{
+        transform: scale(1, 1);
+    }
+    to{
+        transform: scale(0, 0);
+    }
 }
 .btn-navigation .svg-navi-close{
     transform: scale(0, 0);
