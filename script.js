@@ -21,6 +21,10 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
+function showNavi(){
+    document.getElementById("navigation").className = "navigation show";
+}
+
 var image = 1;
 var temp = 1;
 var _imgCount = 0;
