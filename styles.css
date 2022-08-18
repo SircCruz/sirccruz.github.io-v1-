@@ -800,6 +800,17 @@ footer p{
             left: 0px;
         }
     }
+    .navigation.hide{
+        animation: hidenavi 0.5s forwards;
+    }
+    @keyframes hidenavi {
+        from{
+            left: 0px;
+        }
+        to{
+            left: -300px;
+        }
+    }
     .portfolio.blur{
         animation: blurbg 0.5s forwards;
     }
