@@ -783,4 +783,8 @@ footer p{
         width: 111%;
         transform: translateX(-5.1%);
     }
+    .navigation{
+        width: 300px;
+        left: -300px;
+    }
 }
