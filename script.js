@@ -21,6 +21,17 @@ function scrollToDiv(name){
     window.scrollTo({top: y, behavior: 'smooth'});
 }
 
+var isNaviShowing = false;
+function naviShowState(){
+    if(!isNaviShowing){
+        showNavi();
+        isNaviShowing = true;
+    }
+    else{
+        hideNavi();
+        isNaviShowing = false;
+    }
+}
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
     document.getElementById("portfolio").className = "portfolio blur";
