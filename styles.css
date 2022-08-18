@@ -326,7 +326,7 @@ body{
 .btn-navigation{
     position: fixed;
     display: none;
-    z-index: 0;
+    z-index: 1;
     left: 5px;
     transform: translateY(-10px);
 }
@@ -786,5 +786,16 @@ footer p{
     .navigation{
         width: 300px;
         left: -300px;
+    }
+    .navigation.show{
+        animation: shownavi 0.5s forwards;
+    }
+    @keyframes shownavi {
+        from{
+            left: -300px;
+        }
+        to{
+            left: 0px;
+        }
     }
 }
