@@ -333,7 +333,7 @@ body{
 .btn-navigation svg{
     position: absolute;
 }
-.btn-navigation .svg-navi-open{
+.btn-navigation .svg-navi-open, .svg-navi-close{
     transform: scale(0, 0);
 }
 .btn-navigation .svg-navi-open.shrink, .svg-navi-close.shrink{
@@ -346,9 +346,6 @@ body{
     to{
         transform: scale(0, 0);
     }
-}
-.btn-navigation .svg-navi-close{
-    transform: scale(0, 0);
 }
 .btn-navigation .svg-navi-close.enlarge, .svg-navi-open.enlarge{
     animation: enlargeanim 0.25s 0.25s forwards;
