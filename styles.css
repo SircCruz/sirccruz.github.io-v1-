@@ -846,7 +846,7 @@ footer p{
             left: -300px;
         }
     }
-    .portfolio.blur{
+    .portfolio.blur, .introduction.blur{
         animation: blurbg 0.5s forwards;
     }
     @keyframes blurbg {
@@ -857,7 +857,7 @@ footer p{
             filter: blur(5px);
         }
     }
-    .portfolio.unblur{
+    .portfolio.unblur, .introduction.unblur{
         animation: unblurbg 0.5s forwards;
     }
     @keyframes unblurbg {
