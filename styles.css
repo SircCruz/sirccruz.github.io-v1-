@@ -811,7 +811,65 @@ footer p{
     font-weight: lighter;
     color: #555;
 }
-@media (max-width: 1024px){
+.navigation.show{
+    animation: shownavi 0.5s forwards;
+}
+@keyframes shownavi {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 0px;
+    }
+}
+.navigation.hide{
+    animation: hidenavi 0.5s forwards;
+}
+@keyframes hidenavi {
+    from{
+        left: 0px;
+    }
+    to{
+        left: -300px;
+    }
+}
+.portfolio.blur, .introduction.blur{
+    animation: blurbg 0.5s forwards;
+}
+@keyframes blurbg {
+    from{
+        filter: blur(0px);
+    }
+    to{
+        filter: blur(5px);
+    }
+}
+.portfolio.unblur, .introduction.unblur{
+    animation: unblurbg 0.5s forwards;
+}
+@keyframes unblurbg {
+    from{
+        filter: blur(5px);
+    }
+    to{
+        filter: blur(0px);
+    }
+}
+@media (max-width: 480px){
+    .portfolio{
+        transform: translateX(-30%);
+        width: 98%;
+    }
+    footer{
+        width: 111%;
+        transform: translateX(-5.1%);
+    }
+    .navigation{
+        width: 300px;
+        left: -300px;
+    }
+}
+@media (min-width: 480px){
     .portfolio{
         transform: translateX(-29%);
         width: 90%;
@@ -824,48 +882,21 @@ footer p{
         width: 300px;
         left: -300px;
     }
-    .navigation.show{
-        animation: shownavi 0.5s forwards;
+}
+@media (min-width: 1025px){
+    .portfolio{
+        position: absolute;
+        left: 31.25%;
+        right: 11.25%;
+        width: 60%;
+        transform: translateX(0);
     }
-    @keyframes shownavi {
-        from{
-            left: -300px;
-        }
-        to{
-            left: 0px;
-        }
+    footer{
+        width: 166.4%;
+        transform: translateX(-31.2%)
     }
-    .navigation.hide{
-        animation: hidenavi 0.5s forwards;
-    }
-    @keyframes hidenavi {
-        from{
-            left: 0px;
-        }
-        to{
-            left: -300px;
-        }
-    }
-    .portfolio.blur, .introduction.blur{
-        animation: blurbg 0.5s forwards;
-    }
-    @keyframes blurbg {
-        from{
-            filter: blur(0px);
-        }
-        to{
-            filter: blur(5px);
-        }
-    }
-    .portfolio.unblur, .introduction.unblur{
-        animation: unblurbg 0.5s forwards;
-    }
-    @keyframes unblurbg {
-        from{
-            filter: blur(5px);
-        }
-        to{
-            filter: blur(0px);
-        }
+    .navigation{
+        left: 0px;
+        width: 20%;
     }
 }
