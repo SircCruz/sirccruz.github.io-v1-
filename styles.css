@@ -334,7 +334,7 @@ body{
     position: absolute;
 }
 .btn-navigation .svg-navi-open{
-    transform: scale(1, 1);
+    transform: scale(0, 0);
 }
 .btn-navigation .svg-navi-open.shrink, .svg-navi-close.shrink{
     animation: shrinkanim 0.25s forwards;
