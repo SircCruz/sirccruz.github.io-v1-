@@ -3,7 +3,6 @@ var scrollFunction = function(){
     var currentScroll = window.scrollY;
     var scroll = document.getElementById("bg1").offsetHeight / 2;
     if(currentScroll > scroll){
-        hideNavi();
         document.getElementById("navigation").className = "navigation fadein";
         document.getElementById("navigation").style.display = "block";
         document.getElementById("btn-navigation").className = "btn-navigation fadein";

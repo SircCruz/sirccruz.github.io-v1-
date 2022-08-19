@@ -334,31 +334,31 @@ body{
     position: absolute;
 }
 .btn-navigation .svg-navi-open{
-    transform: scale(0, 0);
+    opacity: 1;
 }
 .btn-navigation .svg-navi-open.shrink, .svg-navi-close.shrink{
     animation: shrinkanim 0.25s forwards;
 }
 @keyframes shrinkanim {
     from{
-        transform: scale(1, 1);
+        opacity: 1;
     }
     to{
-        transform: scale(0, 0);
+        opacity: 0;
     }
 }
 .btn-navigation .svg-navi-close{
-    transform: scale(0, 0);
+    opacity: 0;
 }
 .btn-navigation .svg-navi-close.enlarge, .svg-navi-open.enlarge{
     animation: enlargeanim 0.25s 0.25s forwards;
 }
 @keyframes enlargeanim{
     from{
-        transform: scale(0, 0);
+        opacity: 0;
     }
     to{
-        transform: scale(1, 1);
+        opacity: 1;
     }
 }
 .navigation{
