@@ -39,6 +39,7 @@ function naviShowState(){
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
     document.getElementById("portfolio").className = "portfolio blur";
+    document.getElementById("introduction").className = "introduction blur";
     document.body.style.overflowY = "hidden";
 
     document.getElementById("svg-navi-open").className = "svg-navi-open shrink";
@@ -47,6 +48,7 @@ function showNavi(){
 function hideNavi(){
     document.getElementById("portfolio").className = "portfolio unblur";
     document.getElementById("navigation").className = "navigation hide";
+    document.getElementById("introduction").className = "introduction unblur";
     document.body.style.overflowY = "scroll";
 
     document.getElementById("svg-navi-open").className = "svg-navi-open enlarge";
