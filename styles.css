@@ -337,7 +337,7 @@ body{
     transform: scale(0, 0);
 }
 .btn-navigation .svg-navi-open.shrink, .svg-navi-close.shrink{
-    animation: shrinkanim 1s forwards;
+    animation: shrinkanim 0.25s forwards;
     position: absolute;
 }
 @keyframes shrinkanim {
@@ -349,18 +349,18 @@ body{
     to{
         transform: scale(0, 0);
         left: 28px;
-        top: 28px
+        top: 42px
     }
 }
 .btn-navigation .svg-navi-close.enlarge, .svg-navi-open.enlarge{
-    animation: enlargeanim 1s 1s forwards;
+    animation: enlargeanim 0.25s 0.25s forwards;
     position: absolute;
 }
 @keyframes enlargeanim{
     from{
         transform: scale(0, 0);
         left: 28px;
-        top: 28px;
+        top: 42px;
     }
     to{
         transform: scale(1, 1);
