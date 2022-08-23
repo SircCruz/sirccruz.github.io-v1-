@@ -512,7 +512,7 @@ body>.fullscreen{
     border-left: solid 1px rgba(0, 100, 0, 0.26);
 }
 .about .card .content{
-    transform: translateY(35%);
+    margin-top: 50px;
     text-align: justify;
 }
 .about .content .btn_resume, .contact .btn_form{
@@ -857,16 +857,85 @@ footer p{
 }
 @media (max-width: 480px){
     .portfolio{
-        transform: translateX(-30%);
-        width: 98%;
+        transform: translateX(-31%);
+        width: 94%;
     }
     footer{
-        width: 111%;
-        transform: translateX(-5.1%);
+        width: 106%;
+        transform: translateX(-1.7%);
     }
     .navigation{
         width: 300px;
         left: -300px;
+    }
+    .about .card._1{
+        width: 100%;
+        margin-top: -80px;
+        padding-bottom: 20px;
+    }
+    .about .card._2{
+        width: 100%;
+        border: none;
+        padding-left: calc(-3.75%);
+    }
+    .about .card._2 .subcard{
+        border-top: solid 1px rgba(0, 100, 0, 0.26);
+        padding-top: 20px;
+    }
+    .about .content .btn_resume{
+        margin-top: 20px;
+    }
+    .card hr{
+        border: none;
+    }
+    .about .card._2 .subcard .svgskills{
+        padding: 20px 0 20px 0;
+    }
+    .about .card .subcard._2{
+        margin-top: 0px;
+    }
+    .about .stats{
+        margin-top: 20px;
+    }
+    .projects{
+        margin-top: 600px;
+    }
+    .projects .card, .samples .card {
+        transform: translateY(40px);
+        margin-bottom: 420px;
+    }
+    .projects .card .subcard, .samples .card .subcard{
+        width: 100%;
+    }
+    .projects .subcard .img-border, .samples .subcard .img-border{
+        width: 98%;
+        height: 190px;
+    }
+    .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
+        width: 98%;
+        height: 190px;
+    }
+    .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
+        width: 98%;
+    }
+    .projects .subcard .img-slideshow .page, .samples .subcard .img-slideshow .page{
+        margin-top: 40px;
+    }
+    .projects .card .subcard._2, .samples .card .subcard._2{
+        padding: 0 0 0 0;
+    }
+    .projects .subcard .desc, .samples .subcard .desc {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .samples{
+        margin-top: 860px;
+    }
+    .contact{
+        margin-top: 430px;
+    }
+    .contact .details{
+        padding: 0;
     }
 }
 @media (min-width: 480px){
