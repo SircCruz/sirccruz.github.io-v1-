@@ -970,3 +970,12 @@ footer p{
         width: 20%;
     }
 }
+@media (min-width: 1281px){
+    .navigation{
+        width: 300px;
+    }
+    .portfolio{
+        left: 460px;
+        width: 950px;
+    }
+}
