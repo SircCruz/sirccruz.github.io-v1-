@@ -515,6 +515,19 @@ body>.fullscreen{
     margin-top: 50px;
     text-align: justify;
 }
+.divfadein{
+    animation: divfadein 0.5s forwards;
+}
+@keyframes divfadein {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 .about .content .btn_resume, .contact .btn_form{
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
