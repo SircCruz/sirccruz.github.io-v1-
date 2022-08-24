@@ -799,6 +799,7 @@ footer{
     margin-top: 70px;
     transform: translateX(-33.6%);
 
+    white-space: nowrap;
     background-color: #ccc;
     border-top: solid 1px rgba(0, 0, 0, 0.5);
 }
