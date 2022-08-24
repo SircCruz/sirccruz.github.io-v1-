@@ -521,7 +521,7 @@ body>.fullscreen{
 }
 @keyframes divfadein {
     from{
-        transform: translateY(10px);
+        transform: translateY(30px);
         opacity: 0;
     }
     to{
