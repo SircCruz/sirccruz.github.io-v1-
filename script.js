@@ -1,6 +1,7 @@
 var tablet = window.matchMedia("(max-width: 1024px)");
+var currentScroll = 0;
 var scrollFunction = function(){
-    var currentScroll = window.scrollY;
+    currentScroll = window.scrollY;
     var scroll = document.getElementById("bg1").offsetHeight / 2;
     if(currentScroll > scroll){
         hideNavi();
@@ -13,11 +14,20 @@ var scrollFunction = function(){
         document.getElementById("navigation").className = "navigation fadeout";
         document.getElementById("btn-navigation").className = "btn-navigation fadeout";
     }
+    FadeInDivs();
 }
+
+var yOffSet = 70;
+function FadeInDivs(){
+    var content = document.getElementById("content").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if (currentScroll > content){
+        document.getElementById("content").className = "content fadein";
+    }
+}
+
 window.addEventListener("scroll", scrollFunction);
 
 function scrollToDiv(name){
-    var yOffSet = 70;
     var y = document.getElementById(name).getBoundingClientRect().top + window.scrollY - yOffSet;
     window.scrollTo({top: y, behavior: 'smooth'});
     if(tablet.matches){
