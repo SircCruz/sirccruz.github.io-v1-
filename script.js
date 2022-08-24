@@ -16,8 +16,6 @@ var scrollFunction = function(){
     }
     FadeInDivs();
 }
-
-var yOffSet = 70;
 function FadeInDivs(){
     var content = document.getElementById("content").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > content){
@@ -28,6 +26,7 @@ function FadeInDivs(){
 window.addEventListener("scroll", scrollFunction);
 
 function scrollToDiv(name){
+    var yOffSet = 70;
     var y = document.getElementById(name).getBoundingClientRect().top + window.scrollY - yOffSet;
     window.scrollTo({top: y, behavior: 'smooth'});
     if(tablet.matches){
