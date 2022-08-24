@@ -25,10 +25,11 @@ function FadeInDivs(){
     var skills = document.getElementById("skills").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > skills){
         document.getElementById("skills").className = "skills divfadein";
+        document.getElementById("svgskills").className = "svgskills divfadein";
     }
     var skill1 = document.getElementById("skill1").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > skill1){
-        document.getElementById("skills").className = "skill1 divfadein";
+        document.getElementById("skill1").className = "line divfadein";
     }
 }
 
