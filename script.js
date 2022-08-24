@@ -17,6 +17,7 @@ var scrollFunction = function(){
     FadeInDivs();
 }
 function FadeInDivs(){
+    var yOffSet = 500;
     var content = document.getElementById("content").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > content){
         document.getElementById("content").className = "content divfadein";
