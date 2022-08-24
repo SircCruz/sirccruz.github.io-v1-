@@ -514,6 +514,7 @@ body>.fullscreen{
 .about .card .content{
     margin-top: 50px;
     text-align: justify;
+    opacity: 0;
 }
 .divfadein{
     animation: divfadein 0.5s forwards;
