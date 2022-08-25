@@ -495,7 +495,6 @@ body>.fullscreen{
     color: white;
 }
 .about .card{
-    width: 70%;
     display: block;
     transform: translateY(50px);
 }
@@ -546,7 +545,9 @@ body>.fullscreen{
     border-bottom: solid 1px rgba(0, 100, 0, 0.26);
 }
 .about .verticalrule{
-    transform: translate(-50%, 230px) rotate(90deg);
+    position: absolute;
+    left: 49%;
+    transform: translate(-49%, 230px) rotate(90deg);
     width: 360px;
 }
 .svgskills{
