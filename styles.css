@@ -526,7 +526,7 @@ body>.fullscreen{
         opacity: 1;
     }
 }
-.hr1elongate{
+.hrelongate{
     animation: hrelongate 2s forwards;
 }
 @keyframes hrelongate {

@@ -37,15 +37,15 @@ function FadeInDivs(){
     }
     var hr1 = document.getElementById("hr1").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > hr1){
-        document.getElementById("hr1").className = "verticalrule hr1elongate";
+        document.getElementById("hr1").className = "verticalrule hrelongate";
     }
     var hr2 = document.getElementById("hr2").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > hr2){
-        document.getElementById("hr2").className = "verticalrule hr2elongate";
+        document.getElementById("hr2").className = "skillshr hrelongate";
     }
     var hr3 = document.getElementById("hr3").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > hr3){
-        document.getElementById("hr3").className = "verticalrule hr2elongate";
+        document.getElementById("hr3").className = "hrelongate";
     }
 }
 
