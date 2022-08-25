@@ -31,6 +31,10 @@ function FadeInDivs(){
     if (currentScroll > skill1){
         document.getElementById("skill1").className = "line divfadein";
     }
+    var stats = document.getElementById("stats").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if (currentScroll > stats){
+        document.getElementById("stats").className = "divfadein";
+    }
 }
 
 window.addEventListener("scroll", scrollFunction);
