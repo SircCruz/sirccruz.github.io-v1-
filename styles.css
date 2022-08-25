@@ -538,7 +538,7 @@ body>.fullscreen{
     }
 }
 .hr2elongate{
-    animation: hre2longate 2s forwards;
+    animation: hr2elongate 2s forwards;
 }
 @keyframes hr2elongate {
     from{
