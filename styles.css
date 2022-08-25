@@ -541,13 +541,13 @@ body>.fullscreen{
 .btn_resume svg{
     transform: translateY(5px);
 }
-.about hr{
+.about .card hr{
     border: none;
     border-bottom: solid 1px rgba(0, 100, 0, 0.26);
 }
 .about .verticalrule{
     transform: translate(-50%, 230px) rotate(90deg);
-    width: 365px;
+    width: 360px;
 }
 .svgskills{
     opacity: 0;
