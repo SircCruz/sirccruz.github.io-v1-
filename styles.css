@@ -560,7 +560,6 @@ body>.fullscreen{
     position: absolute;
     left: 49%;
     transform: translate(-49%, 230px) rotate(90deg);
-    width: 360px;
 }
 .svgskills{
     opacity: 0;
