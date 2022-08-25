@@ -546,7 +546,6 @@ body>.fullscreen{
 .about hr{
     border: none;
     border-bottom: solid 1px rgba(0, 100, 0, 0.26);
-    padding-top: 20px;
 }
 .svgskills{
     opacity: 0;
