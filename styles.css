@@ -526,6 +526,17 @@ body>.fullscreen{
         opacity: 1;
     }
 }
+.hr1elongate{
+    animation: hrelongate 2s forwards;
+}
+@keyframes hrelongate {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 360px;
+    }
+}
 .about .content .btn_resume, .contact .btn_form{
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
