@@ -49,7 +49,7 @@ function FadeInDivs(){
     }
     var slideshow = document.getElementById("slideshow").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > slideshow){
-        document.getElementById("slideshow").className = "img-slideshow divfadein";
+        document.getElementById("slideshow").className = "img-slideshow divfadein2";
     }
     var title = document.getElementById("title").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > title){
