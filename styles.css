@@ -638,6 +638,7 @@ body>.fullscreen{
     border-bottom-right-radius: 20px;
 }
 .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
+    opacity: 0;
     width: 98.5%;
     z-index: 1;
 }
@@ -758,6 +759,7 @@ body>.fullscreen{
     }
 }
 .projects .subcard .title, .samples .subcard .title, .projects .subcard .options, .samples .subcard .options{
+    opacity: 0;
     margin-top: 20px;
 }
 .projects .subcard .title, .samples .subcard .title{
@@ -779,11 +781,14 @@ body>.fullscreen{
     display: flex;
     float: left;
     margin: 0 10px 5px 0;
-
     border-bottom: solid 2px rgba(0, 100, 0);
     color: rgba(0, 0, 0, 0.7);
 }
+.projects .tags, .samples .tags{
+    opacity: 0;
+}
 .projects .subcard .desc, .samples .subcard .desc{
+    opacity: 0;
     margin-top: 75px;
 }
 .projects .card._2 .subcard{
