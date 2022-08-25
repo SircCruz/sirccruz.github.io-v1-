@@ -537,6 +537,17 @@ body>.fullscreen{
         width: 100%;
     }
 }
+.hr2elongate{
+    animation: hre2longate 2s forwards;
+}
+@keyframes hr2elongate {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
 .about .content .btn_resume, .contact .btn_form{
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
