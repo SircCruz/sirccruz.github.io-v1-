@@ -897,7 +897,6 @@ footer p{
         padding-left: calc(-3.75%);
     }
     .about .card._2 .subcard{
-        border-top: solid 1px rgba(0, 100, 0, 0.26);
         padding-top: 20px;
     }
     .about .content .btn_resume{
