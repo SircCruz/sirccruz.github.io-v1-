@@ -508,8 +508,6 @@ body>.fullscreen{
     width: 46%;
     float: left;
     padding-left: 3.75%;
-
-    border-left: solid 1px rgba(0, 100, 0, 0.26);
 }
 .about .card .content{
     margin-top: 50px;
