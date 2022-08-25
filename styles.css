@@ -548,7 +548,6 @@ body>.fullscreen{
 .about .verticalrule{
     transform: translate(-50%, 230px) rotate(90deg);
     width: 365px;
-    white-space: nowrap;
 }
 .svgskills{
     opacity: 0;
