@@ -527,7 +527,7 @@ body>.fullscreen{
     }
 }
 .hrelongate{
-    animation: hrelongate 2s forwards;
+    animation: hrelongate 1s forwards;
 }
 @keyframes hrelongate {
     from{
@@ -538,7 +538,7 @@ body>.fullscreen{
     }
 }
 .hr2elongate{
-    animation: hr2elongate 2s forwards;
+    animation: hr2elongate 1.5s forwards;
 }
 @keyframes hr2elongate {
     from{
