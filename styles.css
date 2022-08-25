@@ -526,6 +526,17 @@ body>.fullscreen{
         opacity: 1;
     }
 }
+.divfadein2{
+    animation: divfadein2 0.5s forwards;
+}
+@keyframes divfadein2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .hr2elongate{
     animation: hr2elongate 1.5s forwards;
 }
