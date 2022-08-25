@@ -542,6 +542,7 @@ body>.fullscreen{
 }
 .btn_resume svg{
     transform: translateY(5px);
+    padding-bottom: 20px;
 }
 .about hr{
     border: none;
