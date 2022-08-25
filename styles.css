@@ -965,6 +965,10 @@ footer p{
         width: 300px;
         left: -300px;
     }
+    .about .skillshr{
+        border: none;
+        border-bottom: none;
+    }
 }
 @media (min-width: 1025px){
     .portfolio{
