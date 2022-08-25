@@ -534,7 +534,7 @@ body>.fullscreen{
         width: 0px;
     }
     to{
-        width: 420px;
+        width: 100%;
     }
 }
 .about .content .btn_resume, .contact .btn_form{
