@@ -41,11 +41,11 @@ function FadeInDivs(){
     }
     var hr2 = document.getElementById("hr2").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > hr2){
-        document.getElementById("hr2").className = "skillshr hrelongate";
+        document.getElementById("hr2").className = "skillshr hre2longate";
     }
     var hr3 = document.getElementById("hr3").getBoundingClientRect().top + window.scrollY - yOffSet;
     if(currentScroll > hr3){
-        document.getElementById("hr3").className = "hrelongate";
+        document.getElementById("hr3").className = "hre2elongate";
     }
 }
 
