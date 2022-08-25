@@ -967,7 +967,7 @@ footer p{
         width: 300px;
         left: -300px;
     }
-    .about .skillshr{
+    .about .card .skillshr{
         border: none;
         border-bottom: none;
     }
