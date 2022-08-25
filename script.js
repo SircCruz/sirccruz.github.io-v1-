@@ -81,6 +81,23 @@ function FadeInDivs(){
     if(currentScroll > desc2){
         document.getElementById("desc2").className = "desc divfadein";
     }
+    var slideshow3 = document.getElementById("slideshow3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if(currentScroll > slideshow3){
+        document.getElementById("slideshow3").className = "img-slideshow divfadein2";
+    }
+    var title3 = document.getElementById("title3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if(currentScroll > title3){
+        document.getElementById("title3").className = "title divfadein";
+        document.getElementById("options3").className = "options divfadein";
+    }
+    var tags3 = document.getElementById("tags3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if(currentScroll > tags3){
+        document.getElementById("tags3").className = "tags divfadein";
+    }
+    var desc3 = document.getElementById("desc3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    if(currentScroll > desc3){
+        document.getElementById("desc3").className = "desc divfadein";
+    }
 }
 
 window.addEventListener("scroll", scrollFunction);
