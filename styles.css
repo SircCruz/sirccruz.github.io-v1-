@@ -572,8 +572,14 @@ body>.fullscreen{
     left: 49%;
     transform: translate(-49%, 230px) rotate(90deg);
 }
-.svgskills{
+#skill1, #skill2, #skill3, #skill4, #skill5, #skill6, #skill7, #skill8, #skill9, #skill10{
     opacity: 0;
+    margin: 0px 3px;
+}
+.svgskills{
+    display: flex;
+    float: left;
+   
 }
 .svgskills .line{
     padding-bottom: 5px;

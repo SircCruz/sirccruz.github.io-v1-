@@ -33,11 +33,16 @@ function FadeInDivs(){
     var skills = document.getElementById("skills").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > skills){
         document.getElementById("skills").className = "skills divfadein";
-        document.getElementById("svgskills").className = "svgskills divfadein";
-    }
-    var skill1 = document.getElementById("skill1").getBoundingClientRect().top + window.scrollY - yOffSet;
-    if (currentScroll > skill1){
-        document.getElementById("skill1").className = "line divfadein";
+        setInterval(function() {document.getElementById("skill1").className = "divfadein"}, 100);
+        setInterval(function() {document.getElementById("skill2").className = "divfadein"}, 200);
+        setInterval(function() {document.getElementById("skill3").className = "divfadein"}, 300);
+        setInterval(function() {document.getElementById("skill4").className = "divfadein"}, 400);
+        setInterval(function() {document.getElementById("skill5").className = "divfadein"}, 500);
+        setInterval(function() {document.getElementById("skill6").className = "divfadein"}, 600);
+        setInterval(function() {document.getElementById("skill7").className = "divfadein"}, 700);
+        setInterval(function() {document.getElementById("skill8").className = "divfadein"}, 800);
+        setInterval(function() {document.getElementById("skill9").className = "divfadein"}, 900);
+        setInterval(function() {document.getElementById("skill10").className = "divfadein"}, 1000);
     }
     var stats = document.getElementById("stats").getBoundingClientRect().top + window.scrollY - yOffSet;
     if (currentScroll > stats){
