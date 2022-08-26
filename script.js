@@ -1,4 +1,4 @@
-var tablet = window.matchMedia("(max-width: 1024px)");
+var desktop = window.matchMedia("(min-width: 1025px)");
 var currentScroll = 0;
 var scrollFunction = function(){
     currentScroll = window.scrollY;
@@ -7,8 +7,13 @@ var scrollFunction = function(){
         _hideNavi();
         document.getElementById("navigation").className = "navigation fadein";
         document.getElementById("navigation").style.display = "block";
+        if(!desktop.matches){
+            document.getElementById("btn-navigation").style.display = "block";
+        }
+        else{
+            document.getElementById("btn-navigation").style.display = "none";
+        }
         document.getElementById("btn-navigation").className = "btn-navigation fadein";
-        document.getElementById("btn-navigation").style.display = "block";
     }
     else{
         document.getElementById("navigation").className = "navigation fadeout";
