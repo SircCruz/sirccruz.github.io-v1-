@@ -594,6 +594,7 @@ body>.fullscreen{
     margin-bottom: 5px;
 }
 .about .card .subcard._2{
+    display: inline-block;
     margin-top: 40px;
 }
 .stats{
