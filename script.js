@@ -4,7 +4,7 @@ var scrollFunction = function(){
     currentScroll = window.scrollY;
     var scroll = document.getElementById("bg1").offsetHeight / 2;
     if(currentScroll > scroll){
-        hideNavi();
+        _hideNavi();
         document.getElementById("navigation").className = "navigation fadein";
         document.getElementById("navigation").style.display = "block";
         document.getElementById("btn-navigation").className = "btn-navigation fadein";
@@ -110,6 +110,11 @@ function hideNavi(){
     document.getElementById("introduction").className = "introduction unblur";
     document.body.style.overflowY = "scroll";
 
+    document.getElementById("svg-navi-open").className = "svg-navi-open enlarge";
+    document.getElementById("svg-navi-close").className = "svg-navi-close shrink";
+}
+function _hideNavi(){
+    document.getElementById("navigation").className = "navigation hide";
     document.getElementById("svg-navi-open").className = "svg-navi-open enlarge";
     document.getElementById("svg-navi-close").className = "svg-navi-close shrink";
 }

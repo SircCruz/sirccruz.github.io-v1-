@@ -333,10 +333,10 @@ body{
 .btn-navigation svg{
     position: absolute;
 }
-.btn-navigation .svg-navi-open, .svg-navi-close{
+.btn-navigation .svg-navi-close, .svg-navi-open{
     transform: scale(0, 0);
 }
-.btn-navigation .svg-navi-open.shrink, .svg-navi-close.shrink{
+.btn-navigation .shrink{
     animation: shrinkanim 0.25s forwards;
     position: absolute;
 }
@@ -352,7 +352,7 @@ body{
         top: 42px
     }
 }
-.btn-navigation .svg-navi-close.enlarge, .svg-navi-open.enlarge{
+.btn-navigation .enlarge{
     animation: enlargeanim 0.25s 0.25s forwards;
     position: absolute;
 }
