@@ -538,6 +538,7 @@ body>.fullscreen{
     }
 }
 .hr2elongate{
+    position: absolute;
     animation: hr2elongate 1.5s forwards;
 }
 @keyframes hr2elongate {
@@ -545,7 +546,7 @@ body>.fullscreen{
         width: 0px;
     }
     to{
-        width: 100%;
+        width: 94%;
     }
 }
 .about .content .btn_resume, .contact .btn_form{
@@ -989,6 +990,14 @@ footer p{
     }
     .contact .details{
         padding: 0;
+    }
+    @keyframes hr2elongate {
+        from{
+            width: 0px;
+        }
+        to{
+            width: 100%;
+        }
     }
 }
 @media (min-width: 480px){
