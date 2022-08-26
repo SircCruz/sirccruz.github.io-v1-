@@ -14,8 +14,8 @@ var scrollFunction = function(){
         else{
             document.getElementById("btn-navigation").style.display = "none";
             document.body.style.overflowY = "scroll";
-            unblur();
         }
+        unblur();
         document.getElementById("btn-navigation").className = "btn-navigation fadein";
     }
     else{
@@ -87,7 +87,7 @@ function scrollToDiv(name){
     var yOffSet = 70;
     var y = document.getElementById(name).getBoundingClientRect().top + window.scrollY - yOffSet;
     window.scrollTo({top: y, behavior: 'smooth'});
-    isNaviShowing = false;
+    naviShowState();
 }
 
 var isNaviShowing = false;
