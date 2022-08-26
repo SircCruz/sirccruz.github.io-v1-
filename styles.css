@@ -826,6 +826,14 @@ body>.fullscreen{
 .contact input{
     height: 40px;
 }
+.contact .intro-message{
+    text-align: center;
+    padding: 10px 0px;
+
+    background-image: linear-gradient(to right, rgba(0,100,0,0) 0%, rgba(0,100,0,0.1) 30%, rgba(0,100,0,0.1) 70%, rgba(0,100,0,0) 100%);
+    border-top: 10px dotted rgb(0, 100, 0, 0.8);
+    border-bottom: 10px dotted rgb(0, 100, 0, 0.8);
+}
 .contact .messageform .message{
     margin-top: 15px;
     resize: none;
