@@ -9,9 +9,12 @@ var scrollFunction = function(){
         document.getElementById("navigation").style.display = "block";
         if(!desktop.matches){
             document.getElementById("btn-navigation").style.display = "block";
+            isNaviShowing = false;
         }
         else{
             document.getElementById("btn-navigation").style.display = "none";
+            document.body.style.overflowY = "scroll";
+            unblur();
         }
         document.getElementById("btn-navigation").className = "btn-navigation fadein";
     }
@@ -84,9 +87,7 @@ function scrollToDiv(name){
     var yOffSet = 70;
     var y = document.getElementById(name).getBoundingClientRect().top + window.scrollY - yOffSet;
     window.scrollTo({top: y, behavior: 'smooth'});
-    if(tablet.matches){
-        naviShowState();
-    }
+    isNaviShowing = false;
 }
 
 var isNaviShowing = false;
@@ -102,7 +103,9 @@ function naviShowState(){
 }
 function showNavi(){
     document.getElementById("navigation").className = "navigation show";
+    document.getElementById("portfolio").style.animation = "blurbg 0.5s forwards";
     document.getElementById("portfolio").className = "portfolio blur";
+    document.getElementById("introduction").style.animation = "blurbg 0.5s forwards";
     document.getElementById("introduction").className = "introduction blur";
     document.body.style.overflowY = "hidden";
 
@@ -110,8 +113,10 @@ function showNavi(){
     document.getElementById("svg-navi-close").className = "svg-navi-close enlarge";
 }
 function hideNavi(){
+    document.getElementById("portfolio").style.animation = "unblurbg 0.5s forwards";
     document.getElementById("portfolio").className = "portfolio unblur";
     document.getElementById("navigation").className = "navigation hide";
+    document.getElementById("introduction").style.animation = "unblurbg 0.5s forwards";
     document.getElementById("introduction").className = "introduction unblur";
     document.body.style.overflowY = "scroll";
 
@@ -123,7 +128,12 @@ function _hideNavi(){
     document.getElementById("svg-navi-open").className = "svg-navi-open enlarge";
     document.getElementById("svg-navi-close").className = "svg-navi-close shrink";
 }
-
+function unblur(){
+    document.getElementById("portfolio").style.animation = "none";
+    document.getElementById("portfolio").className = "portfolio unblur";
+    document.getElementById("introduction").style.animation = "none";
+    document.getElementById("introduction").className = "introduction unblur";
+}
 var image = 1;
 var temp = 1;
 var _imgCount = 0;
