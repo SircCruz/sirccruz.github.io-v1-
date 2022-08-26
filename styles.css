@@ -826,7 +826,7 @@ body>.fullscreen{
 .contact input{
     height: 40px;
 }
-.contact .message{
+.contact .messageform .message{
     margin-top: 15px;
     resize: none;
     height: 120px;
