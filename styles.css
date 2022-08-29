@@ -584,6 +584,10 @@ body>.fullscreen{
     margin-top: 40px;
     padding: 5px 15px 10px 15px;
 }
+.about .content .btn_resume:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
 .btn_resume svg{
     transform: translateY(5px);
 }
