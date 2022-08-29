@@ -13,6 +13,16 @@ body{
     font-family: Raleway-ExtraLight;
     src: url(fonts/raleway-extralight.ttf);
 }
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 100, 0, 0.5);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0, 100, 0, 1);
+}
 .line1{
     border: none;
     border-bottom: 3px solid rgb(0, 255, 0, 0);
