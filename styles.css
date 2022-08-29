@@ -434,6 +434,7 @@ body{
 }
 .navigation .num{
     margin-right: 2px;
+    font-weight: 400;
 }
 .navigation.fadein, .btn-navigation.fadein{
     animation: naviFadeinAnim 0.3s 0s forwards;
