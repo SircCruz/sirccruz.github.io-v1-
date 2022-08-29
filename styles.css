@@ -17,7 +17,7 @@ a{
 }
 @font-face {
     font-family: Raleway-ExtraLight;
-    src: url(../Portfolio/fonts/Raleway-ExtraLight.ttf);
+    src: url(../Portfolio/fonts/raleway-extraLight.ttf);
 }
 ::-webkit-scrollbar{
     width: 13px;
