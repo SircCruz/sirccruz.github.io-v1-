@@ -10,7 +10,7 @@ body{
     z-index: -2;
 
     overflow-y: hidden;
-    animation: showScrollBar 1s 4.25s forwards;
+    animation: showScrollBar 1s 4s forwards;
 }
 @font-face {
     font-family: Raleway-ExtraLight;
