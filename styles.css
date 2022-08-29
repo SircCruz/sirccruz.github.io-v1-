@@ -64,7 +64,6 @@ body{
     transform: translateX(-50%);
 }
 .preintro p{
-    font-weight: lighter;
     color: #eee;
     overflow: hidden;
     white-space: nowrap;
