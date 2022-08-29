@@ -22,7 +22,7 @@ body{
     width: 0%;
 
     animation-name: hrAnim;
-    animation-delay: 11.5s;
+    animation-delay: 3.25s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -45,7 +45,7 @@ body{
     background-color: #121212;
 
     animation-name: bgAnim;
-    animation-delay: 13s;
+    animation-delay: 4s;
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
@@ -70,8 +70,8 @@ body{
     white-space: nowrap;
 
     animation-name: messageAnim, messageAnim2;
-    animation-delay: 0s, 5s;
-    animation-duration: 4s, 1s;
+    animation-delay: 0s, 2.25s;
+    animation-duration: 1s, 1s;
     animation-fill-mode: forwards;
 }
 @keyframes messageAnim{
@@ -106,8 +106,8 @@ body{
     width: 0%;
 
     animation-name: greetingAnim, greetingAnim2;
-    animation-delay: 5.5s, 13s;
-    animation-duration: 1.5s, 0.7s;
+    animation-delay: 3.25s, 4s;
+    animation-duration: 1s, 0.7s;
     animation-fill-mode: forwards;
 }
 @keyframes greetingAnim {
@@ -138,8 +138,8 @@ body{
 }
 .introduction .title{
     animation-name: titleAnim, titleAnim2;
-    animation-delay: 7.5s, 13s;
-    animation-duration: 1.75s, 0.7s;
+    animation-delay: 3.25s, 4s;
+    animation-duration: 1s, 0.7s;
     animation-fill-mode: forwards;
 }
 @keyframes titleAnim{
@@ -160,8 +160,8 @@ body{
 }
 .introduction .description{
     animation-name: descriptionAnim, descriptionAnim2;
-    animation-delay: 9.5s, 13s;
-    animation-duration: 2s, 0.7s;
+    animation-delay: 3.25s, 4s;
+    animation-duration: 1s, 0.7s;
     animation-fill-mode: forwards;
 }
 @keyframes descriptionAnim {
@@ -198,7 +198,7 @@ body{
     transform: translateY(30px);
 
     animation-name: svg1Anim;
-    animation-delay: 12s;
+    animation-delay: 3.25s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -217,7 +217,7 @@ body{
     transform: translateY(30px);
 
     animation-name: svg2Anim;
-    animation-delay: 12.25s;
+    animation-delay: 3.40s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -236,7 +236,7 @@ body{
     transform: translateY(30px);
 
     animation-name: svg3Anim;
-    animation-delay: 12.5s;
+    animation-delay: 3.55s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -244,12 +244,12 @@ body{
     from{
         opacity: 0;
         transform: translateY(30px);
-        fill:#eee;
+        fill: #ccc;
     }
     to{
         opacity: 1;
         transform: translateY(0px);
-        fill:#121212;
+        fill: #121212;
     }
 }
 .svg4{
@@ -257,7 +257,7 @@ body{
     transform: translateY(30px);
 
     animation-name: svg4Anim;
-    animation-delay: 12.75s;
+    animation-delay: 3.70s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
