@@ -10,7 +10,7 @@ body{
     z-index: -2;
 
     overflow-y: hidden;
-    animation: hideScrollBar 1s 4.25s forwards;
+    animation: showScrollBar 1s 4.25s forwards;
 }
 @font-face {
     font-family: Raleway-ExtraLight;
@@ -283,7 +283,7 @@ body{
         transform: translateY(0px);
     }
 }
-@keyframes hideScrollBar{
+@keyframes showScrollBar{
     from{
         overflow-y: hidden;
     }
