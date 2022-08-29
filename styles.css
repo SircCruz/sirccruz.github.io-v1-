@@ -12,6 +12,9 @@ body{
     overflow-y: hidden;
     animation: showScrollBar 1s 4s forwards;
 }
+a{
+    text-decoration: none;
+}
 @font-face {
     font-family: Raleway-ExtraLight;
     src: url(fonts/raleway-extralight.ttf);
