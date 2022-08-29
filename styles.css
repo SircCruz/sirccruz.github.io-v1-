@@ -9,6 +9,10 @@ body{
     background-color: #eee;
     z-index: -2;
 }
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(fonts/raleway-extralight.ttf);
+}
 .line1{
     border: none;
     border-bottom: 3px solid rgb(0, 255, 0, 0);
@@ -816,6 +820,10 @@ body>.fullscreen{
 }
 .contact .details .messageform{
     margin-top: 30px;
+}
+.contact .message-header{
+    font-size: 25px;
+    font-family: Raleway-ExtraLight;
 }
 .contact input, .contact .message{
     margin-top: 10px;
