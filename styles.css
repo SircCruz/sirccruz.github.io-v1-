@@ -714,7 +714,7 @@ body>.fullscreen{
 }
 .projects .subcard .img-slideshow .page .btn-page, .samples .subcard .img-slideshow .page .btn-page{
     border: none;
-    border-radius: 50%;
+    border-radius: 5px;
     padding: 4px;
     margin: 3px;
     background-color: #ffffff;
@@ -726,11 +726,11 @@ body>.fullscreen{
 @keyframes btnElongate {
     from{
         padding: 4px 4px 4px 4px;
-        border-radius: 50%;
+        width: 0px;
     }
     to{
         padding: 4px 8px 4px 8px;
-        border-radius: 30%;
+        width: 30px;
     }
 }
 .projects .subcard .btn-group .page .inactive, .samples .subcard .btn-group .page .inactive{
@@ -739,12 +739,11 @@ body>.fullscreen{
 @keyframes btnShorten {
     from{
         padding: 4px 8px 4px 8px;
-        border-radius: 30%;
-        
+        width: 30px;
     }
     to{
         padding: 4px 4px 4px 4px;
-        border-radius: 50%;
+        width: 0px;
     }
 }
 .projects .subcard .img-slideshow .active, .samples .subcard .img-slideshow .active, .fullscreen .active{
