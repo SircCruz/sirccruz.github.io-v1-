@@ -25,12 +25,12 @@ var scrollFunction = function(){
     FadeInDivs();
 }
 function FadeInDivs(){
-    var yOffSet = 500;
-    var content = document.getElementById("content").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var content = document.getElementById("content").getBoundingClientRect().top + window.scrollY;
+    currentScroll = window.scrollY + window.scrollY * 0.8;
     if (currentScroll > content){
         document.getElementById("content").className = "content divfadein";
     }
-    var skills = document.getElementById("skills").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var skills = document.getElementById("skills").getBoundingClientRect().top + window.scrollY;
     if (currentScroll > skills){
         document.getElementById("skills").className = "skills divfadein";
         setInterval(function() {document.getElementById("skill1").className = "divfadein"}, 100);
@@ -44,23 +44,24 @@ function FadeInDivs(){
         setInterval(function() {document.getElementById("skill9").className = "divfadein"}, 900);
         setInterval(function() {document.getElementById("skill10").className = "divfadein"}, 1000);
     }
-    var stats = document.getElementById("stats").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var stats = document.getElementById("stats").getBoundingClientRect().top + window.scrollY;
     if (currentScroll > stats){
         document.getElementById("stats").className = "divfadein";
     }
-    var hr1 = document.getElementById("hr1").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var hr1 = document.getElementById("hr1").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > hr1){
         document.getElementById("hr1").className = "verticalrule hrelongate";
     }
-    var hr2 = document.getElementById("hr2").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var hr2 = document.getElementById("hr2").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > hr2){
         document.getElementById("hr2").className = "skillshr hr2elongate";
     }
-    var hr3 = document.getElementById("hr3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var hr3 = document.getElementById("hr3").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > hr3){
         document.getElementById("hr3").className = "hr2elongate";
     }
-    var slideshow = document.getElementById("slideshow").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var slideshow = document.getElementById("slideshow").getBoundingClientRect().top + window.scrollY;
+    currentScroll = window.scrollY + window.scrollY * 0.4;
     if(currentScroll > slideshow){
         document.getElementById("slideshow").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title").className = "title divfadein"}, 200);
@@ -68,7 +69,7 @@ function FadeInDivs(){
         setInterval(function(){document.getElementById("tags").className = "tags divfadein"}, 600);
         setInterval(function() {document.getElementById("desc").className = "desc divfadein"}, 800);
     }
-    var slideshow2 = document.getElementById("slideshow2").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var slideshow2 = document.getElementById("slideshow2").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow2){
         document.getElementById("slideshow2").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title2").className = "title divfadein"}, 200);
@@ -76,7 +77,7 @@ function FadeInDivs(){
         setInterval(function(){document.getElementById("tags2").className = "tags divfadein"}, 600);
         setInterval(function() {document.getElementById("desc2").className = "desc divfadein"}, 800);
     }
-    var slideshow3 = document.getElementById("slideshow3").getBoundingClientRect().top + window.scrollY - yOffSet;
+    var slideshow3 = document.getElementById("slideshow3").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow3){
         document.getElementById("slideshow3").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title3").className = "title divfadein"}, 200);
