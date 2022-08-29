@@ -690,14 +690,14 @@ body>.fullscreen{
     color: white;
 }
 .projects .subcard .img-slideshow .page, .samples .subcard .img-slideshow .page{
-    margin-top: 90px;
+    padding-top: 90px;
     transform: translateX(9px);
     height: 71px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0), rgb(0,0,0, 0.7));
+    background-image: linear-gradient(rgba(0,0,0,0)0%, rgba(0,0,0,0)50%, rgb(0,0,0, 0.7) 100%);
 }
 .projects .subcard .img-slideshow .page .btn-svg, .samples .subcard .img-slideshow .page .btn-svg{
     border: none;
