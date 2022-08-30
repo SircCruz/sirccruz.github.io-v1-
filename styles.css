@@ -20,7 +20,10 @@ a{
     src: url(../Raleway-ExtraLight.ttf);
 }
 ::-webkit-scrollbar{
-    width: 13px;
+    width: 1px;
+}
+::-webkit-scrollbar:hover{
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgb(0, 100, 0, 0.5);
@@ -655,19 +658,18 @@ body>.fullscreen{
 }
 .projects .card .subcard, .samples .card .subcard{
     float: left;
-    width: 46%;
+    width: 40%;
+    height: 440px;
     text-align: justify;
+    padding: 20px;
+    margin: 10px;
+
+    box-shadow: -5px 10px 8px 0 #aaa;
 }
-.projects .card .subcard._1, .samples .card .subcard._1{
-    padding: 0 3.75% 0 0;
-}
-.projects .card .subcard._2, .samples .card .subcard._2{
-    padding: 0 0 0 3.75%;
-} 
 .projects .subcard .img-border, .samples .subcard .img-border{
     position: absolute;
-    width: 45%;
-    height: 240px;
+    width: 39%;
+    height: 190px;
     transform: translateY(5px);
     z-index: -1;
 
@@ -677,7 +679,7 @@ body>.fullscreen{
 }
 .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
     opacity: 0;
-    width: 98.5%;
+    width: 98.45%;
     z-index: 1;
 }
 .projects .subcard .img-slideshow .btn-group, .samples .subcard .img-slideshow .btn-group{
@@ -689,8 +691,8 @@ body>.fullscreen{
 }
 .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
     position: absolute;
-    width: 45%; /*max-width: 100%;*/ 
-    height: 240px; /*auto*/
+    width: 39%; /*max-width: 100%;*/ 
+    height: 190px; /*auto*/
     left: auto;
     /*left:-25%;*/
     transform: translateX(9px); /*12.5%*/
@@ -703,7 +705,7 @@ body>.fullscreen{
 }
 .projects .subcard .img-slideshow .top, .samples .subcard .img-slideshow .top{
     transform: translateX(9px);
-    height: 80px;
+    height: 50px;
 
     background-image: linear-gradient(rgb(0,0,0,0.7), rgba(0,0,0,0));
 }
@@ -719,12 +721,12 @@ body>.fullscreen{
 .projects .subcard .img-slideshow .page, .samples .subcard .img-slideshow .page{
     padding-top: 90px;
     transform: translateX(9px);
-    height: 71px;
+    height: 51px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0)0%, rgba(0,0,0,0)50%, rgb(0,0,0, 0.7) 100%);
+    background-image: linear-gradient(rgba(0,0,0,0)0%, rgba(0,0,0,0)60%, rgb(0,0,0, 0.7) 100%);
 }
 .projects .subcard .img-slideshow .page .btn-svg, .samples .subcard .img-slideshow .page .btn-svg{
     border: none;
@@ -807,8 +809,7 @@ body>.fullscreen{
     float: right;
 }
 .projects .subcard .options svg, .samples .subcard .options svg{
-    margin: 2px 0 0 10px;
-    padding-bottom: 2px;
+    margin: 0 0 0 10px;
 }
 .projects .subcard .options svg:hover, .samples .subcard .options svg:hover{
     cursor: pointer;
@@ -827,6 +828,8 @@ body>.fullscreen{
 .projects .subcard .desc, .samples .subcard .desc{
     opacity: 0;
     margin-top: 40px;
+    height: 100px;
+    overflow-y: scroll;
 }
 .projects .card._2 .subcard{
     left: 50%;
