@@ -306,7 +306,6 @@ a{
     height: 700px;
     position: absolute;
     left: 31.25%;
-    right: 11.25%;
 }
 .header_line{
     border: none;
@@ -406,7 +405,7 @@ a{
     position: fixed;
     z-index: 1;
     list-style-type: none;
-    width: 20%;
+    width: 300px;
 
     border-right: solid 1px rgba(0, 100, 0, 0.26);
     background-image: linear-gradient(rgba(0,0,0,0) 0%, #eee 5%, #eee 95%, rgba(0,0,0,0) 100%);
@@ -653,7 +652,6 @@ body>.fullscreen{
 }
 .projects .card, .samples .card{
     width: 100%;
-    transform: translateY(50px);
     display: block;
 }
 .projects .card .subcard, .samples .card .subcard{
@@ -662,7 +660,7 @@ body>.fullscreen{
     height: 440px;
     text-align: justify;
     padding: 20px;
-    margin: 10px;
+    margin: 50px 10px;
 
     box-shadow: -5px 10px 8px 0 #aaa;
 }
@@ -992,25 +990,27 @@ footer p{
         margin-top: 600px;
     }
     .projects .card, .samples .card {
-        transform: translateY(40px);
         margin-bottom: 420px;
     }
-    .projects .card .subcard, .samples .card .subcard{
-        width: 100%;
+    .projects .card .subcard, .projects .card._2 .subcard._2, .samples .card .subcard{
+        width: 95%;
+        margin: 10px 0;
+        padding: 10px;
+        height: 470px;
     }
     .projects .subcard .img-border, .samples .subcard .img-border{
-        width: 98%;
+        width: 93%;
         height: 190px;
     }
     .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
-        width: 98%;
+        width: 93%;
         height: 190px;
     }
     .projects .subcard .img-slideshow, .samples .subcard .img-slideshow{
         width: 98%;
     }
     .projects .subcard .img-slideshow .page, .samples .subcard .img-slideshow .page{
-        padding-top: 40px;
+        padding-top: 90px;
     }
     .projects .card .subcard._2, .samples .card .subcard._2{
         padding: 0 0 0 0;
@@ -1020,10 +1020,10 @@ footer p{
         padding-bottom: 20px;
     }
     .samples{
-        margin-top: 860px;
+        margin-top: 1070px;
     }
     .contact{
-        margin-top: 430px;
+        margin-top: 580px;
     }
     .contact .details{
         padding: 0;
@@ -1039,16 +1039,123 @@ footer p{
 }
 @media (min-width: 480px){
     .portfolio{
-        transform: translateX(-29%);
-        width: 90%;
+        transform: translateX(-31%);
+        width: 94%;
     }
     .navigation{
         width: 300px;
         left: -300px;
     }
+    .about .card._1{
+        width: 100%;
+        margin-top: -80px;
+        padding-bottom: 20px;
+    }
+    .about .card._2{
+        width: 100%;
+        border: none;
+        padding-left: calc(-3.75%);
+    }
+    .about .card._2 .subcard{
+        padding-top: 20px;
+    }
+    .about .content .btn_resume{
+        margin-top: 20px;
+    }
+    .about .card._2 .subcard .svgskills{
+        padding: 20px 0 20px 0;
+    }
+    .about .card .subcard._2{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .about .stats{
+        margin-top: 20px;
+    }
+    .projects{
+        margin-top: 570px;
+    }
+    .projects .card, .samples .card{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .projects .card .subcard, .samples .card .subcard{
+        margin: 10px;
+        width: 350px;
+    }
+    .projects .subcard .img-border, .samples .subcard .img-border{
+        width: 340px;
+    }
+    .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
+        width: 340px;
+    }
+    .samples{
+        margin-top: 70px;
+    }
+    .contact{
+        margin-top: 70px;
+    }
+}
+@media (min-width: 720px){
+    .about .card._1{
+        width: 46%;
+        float: left;
+        padding-right: 3.75%;
+
+        margin-top: 20px;
+        padding-bottom: unset;
+    }
+    .about .card._2{
+        width: 46%;
+        float: left;
+        padding-left: 3.75%;
+    }
+    .about .card._2 .subcard{
+        padding-top: unset;
+    }
+    .about .card._2 .subcard._2{
+        padding-top: 40px;
+    }
+    .about .card._2 .subcard{
+        padding-top: unset;
+    }
+    .about .content .btn_resume{
+        margin-top: 40px;
+    }
+    .about .card._2 .subcard .svgskills{
+        padding: 40px 0 40px 0;
+    }
+    .about .stats{
+        margin-top: 40px;
+    }
     .about .card .skillshr{
         border: none;
         border-bottom: none;
+    }
+    .projects{
+        margin-top: 460px;
+    }
+    .projects .card, .samples .card{
+        display: unset;
+        justify-content: unset;
+        align-self: unset;
+    }
+    .projects .card .subcard, .samples .card .subcard{
+        margin: 50px 10px;
+        width: 40%;
+    }
+    .projects .subcard .img-border, .samples .subcard .img-border{
+        width: 39%;
+    }
+    .projects .subcard .img-slideshow img, .samples .subcard .img-slideshow img{
+        width: 39%;
+    }
+    .samples{
+        margin-top: 560px;
+    }
+    .contact{
+        margin-top: 620px;
     }
     .hrelongate{
         animation: hrelongate 1s forwards;
@@ -1066,13 +1173,12 @@ footer p{
     .portfolio{
         position: absolute;
         left: 31.25%;
-        right: 11.25%;
-        width: 60%;
+        width: 68%;
         transform: translateX(0);
     }
     .navigation{
         left: 0px;
-        width: 20%;
+        width: 300px;
     }
 }
 @media (min-width: 1481px){
