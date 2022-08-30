@@ -826,7 +826,7 @@ body>.fullscreen{
 }
 .projects .subcard .desc, .samples .subcard .desc{
     opacity: 0;
-    margin-top: 75px;
+    margin-top: 40px;
 }
 .projects .card._2 .subcard{
     left: 50%;
