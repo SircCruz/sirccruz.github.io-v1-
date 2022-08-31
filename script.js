@@ -64,6 +64,7 @@ function FadeInDivs(){
     currentScroll = window.scrollY + window.scrollY * 0.4;
     if(currentScroll > slideshow){
         document.getElementById("slideshow").className = "img-slideshow divfadein2";
+        setInterval(function() {document.getElementById("card1").className = "card _1 divfadein"}, 0);
         setInterval(function() {document.getElementById("title").className = "title divfadein"}, 200);
         setInterval(function() {document.getElementById("tags").className = "tags divfadein"}, 400);
         setInterval(function(){document.getElementById("desc").className = "desc divfadein"}, 600);
@@ -72,6 +73,7 @@ function FadeInDivs(){
     var slideshow2 = document.getElementById("slideshow2").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow2){
         document.getElementById("slideshow2").className = "img-slideshow divfadein2";
+        setInterval(function() {document.getElementById("card2").className = "card _2 divfadein"}, 0);
         setInterval(function() {document.getElementById("title2").className = "title divfadein"}, 200);
         setInterval(function() {document.getElementById("tags2").className = "tags divfadein"}, 400);
         setInterval(function(){document.getElementById("desc2").className = "desc divfadein"}, 600);
@@ -80,6 +82,7 @@ function FadeInDivs(){
     var slideshow3 = document.getElementById("slideshow3").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow3){
         document.getElementById("slideshow3").className = "img-slideshow divfadein2";
+        setInterval(function() {document.getElementById("card3").className = "card _1 divfadein"}, 0);
         setInterval(function() {document.getElementById("title3").className = "title divfadein"}, 200);
         setInterval(function() {document.getElementById("tags3").className = "tags divfadein"}, 400);
         setInterval(function(){document.getElementById("desc3").className = "desc divfadein"}, 600);
