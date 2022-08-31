@@ -65,25 +65,25 @@ function FadeInDivs(){
     if(currentScroll > slideshow){
         document.getElementById("slideshow").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title").className = "title divfadein"}, 200);
-        setInterval(function() {document.getElementById("options").className = "tags divfadein"}, 400);
-        setInterval(function(){document.getElementById("tags").className = "desc divfadein"}, 600);
-        setInterval(function() {document.getElementById("desc").className = "options divfadein"}, 800);
+        setInterval(function() {document.getElementById("tags").className = "tags divfadein"}, 400);
+        setInterval(function(){document.getElementById("desc").className = "desc divfadein"}, 600);
+        setInterval(function() {document.getElementById("options").className = "options divfadein"}, 800);
     }
     var slideshow2 = document.getElementById("slideshow2").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow2){
         document.getElementById("slideshow2").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title2").className = "title divfadein"}, 200);
-        setInterval(function() {document.getElementById("options2").className = "tags divfadein"}, 400);
-        setInterval(function(){document.getElementById("tags2").className = "desc divfadein"}, 600);
-        setInterval(function() {document.getElementById("desc2").className = "options divfadein"}, 800);
+        setInterval(function() {document.getElementById("tags2").className = "tags divfadein"}, 400);
+        setInterval(function(){document.getElementById("desc2").className = "desc divfadein"}, 600);
+        setInterval(function() {document.getElementById("options2").className = "options divfadein"}, 800);
     }
     var slideshow3 = document.getElementById("slideshow3").getBoundingClientRect().top + window.scrollY;
     if(currentScroll > slideshow3){
         document.getElementById("slideshow3").className = "img-slideshow divfadein2";
         setInterval(function() {document.getElementById("title3").className = "title divfadein"}, 200);
-        setInterval(function() {document.getElementById("options3").className = "tags divfadein"}, 400);
-        setInterval(function(){document.getElementById("tags3").className = "desc divfadein"}, 600);
-        setInterval(function() {document.getElementById("desc3").className = "options divfadein"}, 800);
+        setInterval(function() {document.getElementById("tags3").className = "tags divfadein"}, 400);
+        setInterval(function(){document.getElementById("desc3").className = "desc divfadein"}, 600);
+        setInterval(function() {document.getElementById("options3").className = "options divfadein"}, 800);
     }
 }
 
