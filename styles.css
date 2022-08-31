@@ -679,6 +679,7 @@ body>.fullscreen{
     opacity: 0;
     width: 98.45%;
     z-index: 1;
+    margin-top: 15px;
 }
 .projects .subcard .img-slideshow .btn-group, .samples .subcard .img-slideshow .btn-group{
     opacity: 0;
