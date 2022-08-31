@@ -653,6 +653,7 @@ body>.fullscreen{
 .projects .card, .samples .card{
     width: 100%;
     display: block;
+    opacity: 0;
 }
 .projects .card .subcard, .samples .card .subcard{
     float: left;
