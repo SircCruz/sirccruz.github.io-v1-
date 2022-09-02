@@ -305,3 +305,12 @@ function prevImg3(){
         imageSet3();
     }
 }
+function Send(){
+    $.ajax({
+        type: "POST",
+        url: "url",
+        success: function (response) {
+            alert("Thank you for your feedback!");
+        }
+    });
+}
