@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
         <script>history.scrollRestoration = "manual"</script>
+        <script src="jquery-3.6.1.js"></script>
     </head>
     <body onresize="scrollFunction()">
         <div class="btn-navigation" id="btn-navigation">
@@ -520,7 +521,7 @@
                         <p>Any feedbacks or suggestions will be much appreciated!</p>
                     </div>
                     <div class="messageform">
-                        <formindex onsubmit="Send()">
+                        <form onsubmit="Send()">
                             <p class="message-header">Leave a Message</p>
                             <input type="email" placeholder="Email" name="email"><br>
                             <input type="text" placeholder="Subject" name="subject"><br>
