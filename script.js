@@ -308,8 +308,8 @@ function prevImg3(){
 function Send(){
     $.ajax({
         type: "POST",
-        url: "url",
-        success: function (response) {
+        url: "https://formspree.io/f/mwkzveza",
+        success: function () {
             alert("Thank you for your feedback!");
         }
     });
